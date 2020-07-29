@@ -8,7 +8,15 @@ input[type="radio"] {
 ul{padding:0}
 label{font-weight:400;display:block;margin-bottom:0}
 .content_stat_list_wrap p{text-align:center;font-size:1.4rem;margin-top:2rem}
-
+.content_stat_list_wrap > div{
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.content_stat_list_wrap > div::-webkit-scrollbar{
+    width: 0 !important /* Chrome, Safari, Opera*/
+}
+.content_stat_list_wrap > div h2{font-size:2rem !important}
+.bage{width:32%;text-align:center;}
 @media all and (min-width:1025px) {
     input[type="radio"] + label span {
         display:inline-block;
@@ -55,7 +63,7 @@ label{font-weight:400;display:block;margin-bottom:0}
     .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
     .hero_stat_list_head h1 span{font-size:1.7rem;}
     .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:7rem;margin-left:205px}
+    .bage{position: absolute;top:7rem;}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;height:100%;border-radius:10px;height:87rem;margin-right:1.5rem;}
     .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
@@ -116,7 +124,7 @@ label{font-weight:400;display:block;margin-bottom:0}
     .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
     .hero_stat_list_head h1 span{font-size:1.7rem;}
     .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:7rem;margin-left:145px}
+    .bage{position: absolute;top:7rem;width:32%;text-align:center;}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:60rem;margin-right:1.5rem;}
     .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
@@ -177,7 +185,7 @@ label{font-weight:400;display:block;margin-bottom:0}
     .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
     .hero_stat_list_head h1 span{font-size:1.7rem;}
     .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:6rem;margin-left:11.5rem}
+    .bage{position: absolute;top:6rem;}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:22rem;margin-right:1.5rem;}
     .content_stat_list_wrap > div:last-child{margin-right:0}
@@ -238,7 +246,7 @@ label{font-weight:400;display:block;margin-bottom:0}
     .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
     .hero_stat_list_head h1 span{font-size:1.7rem;}
     .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:6rem;margin-left:11.5rem}
+    .bage{position: absolute;top:6rem;}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:22rem;margin-right:1.5rem;}
     .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
@@ -299,7 +307,7 @@ label{font-weight:400;display:block;margin-bottom:0}
     .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
     .hero_stat_list_head h1 span{font-size:1.7rem;}
     .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:6rem;margin-left:10rem}
+    .bage{position: absolute;top:6rem;}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:25rem;margin-right:1rem;}
     .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
@@ -359,7 +367,7 @@ label{font-weight:400;display:block;margin-bottom:0}
     .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
     .hero_stat_list_head h1 span{font-size:1.7rem;}
     .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:6rem;margin-left:9rem}
+    .bage{position: absolute;top:6rem;}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:23rem;margin-right:1rem;}
     .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
@@ -420,7 +428,7 @@ label{font-weight:400;display:block;margin-bottom:0}
     .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
     .hero_stat_list_head h1 span{font-size:1.7rem;}
     .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:6rem;margin-left:8.5rem}
+    .bage{position: absolute;top:6rem;}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:22rem;margin-right:1rem;}
     .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
@@ -480,7 +488,7 @@ label{font-weight:400;display:block;margin-bottom:0}
     .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
     .hero_stat_list_head h1 span{font-size:1.5rem;}
     .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:5rem;margin-left:7.5rem}
+    .bage{position: absolute;top:5rem;}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:18rem;margin-right:1rem;}
     .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}

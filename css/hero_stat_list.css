@@ -6,6 +6,12 @@ input[type="radio"] {
 }
 * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
 label{font-weight:400;}
+.hero_stat_list_img_wrap,.hero_stat_list_menu > div:last-child{
+    -ms-overflow-style: none; /* IE and Edge */
+}
+.hero_stat_list_img_wrap::-webkit-scrollbar,.hero_stat_list_menu > div:last-child::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
 @media all and (min-width:1025px) {
     ul{padding:1rem 0 1rem 1rem !important}
     input[type="radio"] + label span {
@@ -58,7 +64,7 @@ label{font-weight:400;}
     .hero_stat_list_menu > div li{font-size:1.4rem;color:#333;line-height:2.6rem;}
     .hero_stat_list_menu > div li input{margin-right:5px}
     .hero_stat_list_menu > div:last-child{overflow-y: scroll;}
-    .hero_stat_list_img_wrap{float:right;width:75%;overflow-y: scroll;}
+    .hero_stat_list_img_wrap{float:right;width:75%;overflow-y: scroll;height:40rem}
     .hero_stat_list_img_wrap ul{padding:0 !important}
     .hero_stat_list_img_wrap ul li{border:5px solid #28475e;border-radius:10px;width:90px;height:90px;float:left;display:inline-block;margin-right:3rem;position: relative;
     margin-bottom:1rem}
@@ -121,7 +127,7 @@ label{font-weight:400;}
     .hero_stat_list_menu > div li{font-size:1.4rem;color:#333;line-height:2.6rem;}
     .hero_stat_list_menu > div li input{margin-right:5px}
     .hero_stat_list_menu > div:last-child{overflow-y: scroll;}
-    .hero_stat_list_img_wrap{float:right;width:75%;overflow-y: scroll;}
+    .hero_stat_list_img_wrap{float:right;width:75%;overflow-y: scroll;height:40rem}
     .hero_stat_list_img_wrap ul{padding:0 !important}
     .hero_stat_list_img_wrap ul li{border:5px solid #28475e;border-radius:10px;width:90px;height:90px;float:left;display:inline-block;margin-right:3rem;position: relative;
     margin-bottom:1rem}

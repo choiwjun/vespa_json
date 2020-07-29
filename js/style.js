@@ -2,12 +2,11 @@ $(document).ready(function(){
     $('.hero_stat_list_head img,.hero_stat_item_list_head img').click(function(){
         window.history.back();
     })
-    $('.hero_stat_list_img_wrap li').click(function(e){
-        var chk = 0
+    $('#here_ajax_list_ul li').click(function(e){
         if($(this).hasClass('on')){
             $(this).removeClass('on'); 
         }
-        else if($('.hero_stat_list_img_wrap li').hasClass('on') < 1){
+        else if($('#here_ajax_list_ul li').hasClass('on') < 1){
             $(this).addClass('on')
         }
     });

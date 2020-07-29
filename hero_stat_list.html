@@ -112,6 +112,10 @@
                                       );
                                   }
                               }
+                              $("#here_ajax_list_ul li").click(function(){
+                                $('#here_ajax_list_ul li').removeClass('on');
+                                $(this).addClass('on')
+                              })
                               i += 1;
                           } while (i < 8);
                           console.log(responseObject);

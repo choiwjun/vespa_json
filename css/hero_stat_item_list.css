@@ -4,6 +4,15 @@ html.body{height:100%}
 #tab-1 table td:nth-child(4){position: relative;}
 .tool{position: absolute;left:-140px;top:8px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
 .tool p{margin:0}
+.modal-title{font-weight:700 !important;}
+.table_wrap,.modal-content{
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.table_wrap::-webkit-scrollbar,.modal-content::-webkit-scrollbar{
+    width: 0 !important /* Chrome, Safari, Opera*/
+}
+.table_wrap table td{padding:2rem 1rem !important}
 @media all and (min-width:1025px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:24rem}
     .form-control:first-child{margin-right:10px}
@@ -73,12 +82,13 @@ html.body{height:100%}
     #tab-2 .table_wrap table td:nth-child(3){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-3 .table_wrap table td:nth-child(2){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-2 .table_wrap table td:nth-child(2){position: relative;overflow: hidden;}
-    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.2rem;border:2px solid #7a8ca1}
+    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;
+        z-index:1;border-radius:5px;margin-top:1.5rem;border:2px solid #7a8ca1}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(2){left:5%;z-index:2}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(3){left:13%;z-index:3}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(4){left:18%;z-index:4}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(5){left:23%;z-index:5}
-    #tab-2 .table_wrap table td:nth-child(2) span{float:right;margin-right:2rem}
+    #tab-2 .table_wrap table td:nth-child(2) span{}
     .table_wrap table td:last-child img{width:13.1rem;height:3.65rem;}
     .modal-backdrop.in{opacity:.9;}
     .modal-title{color:#28b3b5;font-weight:400;}
@@ -163,7 +173,7 @@ html.body{height:100%}
     .tab-content.current{
     display: inherit;
     }
-    .table_wrap{width:100%;padding:2rem;margin-top:2rem;overflow-y:scroll;}
+    .table_wrap{width:100%;padding:2rem;margin-top:2rem;overflow-y:scroll;height:60rem;}
     .table_wrap table{width:100%;font-size:1.4rem;}
     .table_wrap table th{color:#666;text-align:center;padding-bottom:2rem;background-image:url('../images/img_hero_table_head.png');
         background-repeat:no-repeat;background-position:right 3px;background-size:1px 12px}
@@ -180,12 +190,13 @@ html.body{height:100%}
     #tab-2 .table_wrap table td:nth-child(3){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-3 .table_wrap table td:nth-child(2){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-2 .table_wrap table td:nth-child(2){position: relative;overflow: hidden;}
-    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.2rem;border:2px solid #7a8ca1}
+    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;
+        left:0;top:0;z-index:1;border-radius:5px;margin-top:1.5rem;border:2px solid #7a8ca1}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(2){left:8%;z-index:2}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(3){left:13%;z-index:3}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(4){left:18%;z-index:4}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(5){left:23%;z-index:5}
-    #tab-2 .table_wrap table td:nth-child(2) span{float:right;margin-right:2rem}
+    #tab-2 .table_wrap table td:nth-child(2) span{display: inline-block;margin-left:5rem}
     .table_wrap table td:last-child img{width:13.1rem;height:3.65rem;}
     .modal-backdrop.in{opacity:.9;}
     .modal-title{color:#28b3b5;font-weight:400;}
@@ -387,12 +398,12 @@ html.body{height:100%}
     #tab-2 .table_wrap table td:nth-child(3){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-3 .table_wrap table td:nth-child(2){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-2 .table_wrap table td:nth-child(2){position: relative;overflow: hidden;}
-    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.2rem;border:2px solid #7a8ca1}
+    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.5rem;border:2px solid #7a8ca1}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(2){left:8%;z-index:2}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(3){left:13%;z-index:3}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(4){left:18%;z-index:4}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(5){left:23%;z-index:5}
-    #tab-2 .table_wrap table td:nth-child(2) span{float:right;margin-right:2rem}
+    #tab-2 .table_wrap table td:nth-child(2) span{display: inline-block;margin-left:5rem}
     .table_wrap table td:last-child img{width:13.1rem;height:3.65rem;}
     .modal-backdrop.in{opacity:.9;}
     .modal-title{color:#28b3b5;font-weight:400;}
@@ -496,12 +507,12 @@ html.body{height:100%}
     #tab-2 .table_wrap table td:nth-child(3){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-3 .table_wrap table td:nth-child(2){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-2 .table_wrap table td:nth-child(2){position: relative;overflow: hidden;}
-    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.2rem;border:2px solid #7a8ca1}
+    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.4rem;border:2px solid #7a8ca1}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(2){left:8%;z-index:2}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(3){left:13%;z-index:3}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(4){left:18%;z-index:4}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(5){left:23%;z-index:5}
-    #tab-2 .table_wrap table td:nth-child(2) span{float:right;margin-right:2rem}
+    #tab-2 .table_wrap table td:nth-child(2) span{display: inline-block;margin-left:8rem}
     .table_wrap table td:last-child img{width:13.1rem;height:3.65rem;}
     .modal-backdrop.in{opacity:.9;}
     .modal-title{color:#28b3b5;font-weight:400;}
@@ -605,12 +616,12 @@ html.body{height:100%}
     #tab-2 .table_wrap table td:nth-child(3){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-3 .table_wrap table td:nth-child(2){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-2 .table_wrap table td:nth-child(2){position: relative;overflow: hidden;width:28% !important}
-    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.2rem;border:2px solid #7a8ca1}
+    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.4rem;border:2px solid #7a8ca1}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(2){left:8%;z-index:2}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(3){left:13%;z-index:3}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(4){left:18%;z-index:4}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(5){left:23%;z-index:5}
-    #tab-2 .table_wrap table td:nth-child(2) span{float:right;margin-right:2rem}
+    #tab-2 .table_wrap table td:nth-child(2) span{display: inline-block;margin-left:8rem}
     .table_wrap table td:last-child img{width:13.1rem;height:3.65rem;}
     .modal-backdrop.in{opacity:.9;}
     .modal-title{color:#28b3b5;font-weight:400;}
@@ -714,12 +725,12 @@ html.body{height:100%}
     #tab-2 .table_wrap table td:nth-child(3){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-3 .table_wrap table td:nth-child(2){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-2 .table_wrap table td:nth-child(2){position: relative;overflow: hidden;width:30% !important}
-    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.2rem;border:2px solid #7a8ca1}
+    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.4rem;border:2px solid #7a8ca1}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(2){left:8%;z-index:2}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(3){left:13%;z-index:3}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(4){left:18%;z-index:4}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(5){left:23%;z-index:5}
-    #tab-2 .table_wrap table td:nth-child(2) span{float:right;margin-right:2rem}
+    #tab-2 .table_wrap table td:nth-child(2) span{display: inline-block;margin-left:8rem}
     .table_wrap table td:last-child img{width:13.1rem;height:3.65rem;}
     .modal-backdrop.in{opacity:.9;}
     .modal-title{color:#28b3b5;font-weight:400;}
@@ -823,12 +834,12 @@ html.body{height:100%}
     #tab-2 .table_wrap table td:nth-child(3){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-3 .table_wrap table td:nth-child(2){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-2 .table_wrap table td:nth-child(2){position: relative;overflow: hidden;width:35% !important}
-    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.2rem;border:2px solid #7a8ca1}
+    #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;float:left;position: absolute;left:0;top:0;z-index:1;border-radius:5px;margin-top:1.4rem;border:2px solid #7a8ca1}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(2){left:8%;z-index:2}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(3){left:13%;z-index:3}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(4){left:18%;z-index:4}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(5){left:23%;z-index:5}
-    #tab-2 .table_wrap table td:nth-child(2) span{float:right;margin-right:2rem}
+    #tab-2 .table_wrap table td:nth-child(2) span{display: inline-block;margin-left:8rem}
     .table_wrap table td:last-child img{width:13.1rem;height:3.65rem;}
     .modal-backdrop.in{opacity:.9;}
     .modal-title{color:#28b3b5;font-weight:400;}
@@ -855,4 +866,5 @@ html.body{height:100%}
     .line_wrap span{background:#1fb7ba;height:0.7rem;display:inline-block;float:left;border-radius:10px;}
     .sum{float:right;margin-right:15px}
     .tool{position: absolute;left:-175px;top:10px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
+
 }

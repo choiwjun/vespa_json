@@ -1,7 +1,10 @@
 body{font-size:62.5%}
 html.body{height:100%}
 * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
-
+.modal-content::-webkit-scrollbar{
+    width: 0 !important /* Chrome, Safari, Opera*/
+}
+.modal-title{font-weight:700 !important;}
 @media all and (min-width:1025px){
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:24rem}
     .form-control:first-child{margin-right:10px}
