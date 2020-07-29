@@ -79,14 +79,14 @@
                 <div class="table_wrap">
                     <table>
                         <colgroup>
+                            <col width="10%" />
+                            <col width="40%" />
+                            <col width="15%" />
                             <col width="" />
-                            <col width="" />
-                            <col width="" />
-                            <col width="" />
-                            <col width="" />
+                            <col width="23%" />
                         </colgroup>
                         <thead>
-                            <tr>
+                            <tr class="fixed_top">
                                 <th>순위</th>
                                 <th>컨텐츠</th>
                                 <th>영웅순위</th>
@@ -94,6 +94,16 @@
                                 <th>초월특성</th>
                             </tr>
                         </thead>
+                    </table>
+                    <div class="table_scroll_wrap">
+                    <table>
+                        <colgroup>
+                            <col width="10%" />
+                            <col width="40%" />
+                            <col width="15%" />
+                            <col width="" />
+                            <col width="23%" />
+                        </colgroup>
                         <tbody id="hero_list">
                         <!--
                             <tr>
@@ -177,6 +187,7 @@
                             -->
                         </tbody>
                     </table>
+                    </div>
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -259,10 +270,10 @@
                 <div class="table_wrap">
                     <table>
                         <colgroup>
+                            <col width="10%" />
+                            <col width="32%" />
                             <col width="" />
-                            <col width="30%" />
-                            <col width="" />
-                            <col width="" />
+                            <col width="10%" />
                         </colgroup>
                         <thead>
                             <tr>
@@ -272,55 +283,66 @@
                                 <th>착용비율</th>
                             </tr>
                         </thead>
-                        <tbody id="item_list">
-                        <!--
-                            <tr>
-                                <td><img src="images/ico_1st.png" alt="" /></td>
-                                <td>
-                                    <div>
-                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
-                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
-                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
-                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
-                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
-                                        <span>신속의어둠</span>
-                                    </div>
-                                </td>
-                                <td>보스에게 입히는 피해가 12 % 증가,<br /> 
-                                    받는 피해가 12% 감소합니다.</td>
-                                <td>95%</td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/ico_2st.png" alt="" /></td>
-                                <td>
-                                    <div>
-                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
-                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
-                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
-                                        <span>신속의어둠</span>
-                                    </div>
-                                </td>
-                                <td>보스에게 입히는 피해가 12 % 증가,<br /> 
-                                    받는 피해가 12% 감소합니다.</td>
-                                <td>95%</td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/ico_3st.png" alt="" /></td>
-                                <td>
-                                    <div>
-                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
-                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
-                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
-                                        <span>신속의어둠</span>
-                                    </div>
-                                </td>
-                                <td>보스에게 입히는 피해가 12 % 증가,<br /> 
-                                    받는 피해가 12% 감소합니다.</td>
-                                <td>95%</td>
-                            </tr>
-                            -->
-                        </tbody>
                     </table>
+                    <div class="table_scroll_wrap">
+                        <table>
+                            <colgroup>
+                                <col width="10%" />
+                                <col width="32%" />
+                                <col width="" />
+                                <col width="10%" />
+                            </colgroup>
+
+                            <tbody id="item_list">
+                            <!--
+                                <tr>
+                                    <td><img src="images/ico_1st.png" alt="" /></td>
+                                    <td>
+                                        <div>
+                                            <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                            <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                            <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                            <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                            <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                            <span>신속의어둠</span>
+                                        </div>
+                                    </td>
+                                    <td>보스에게 입히는 피해가 12 % 증가,<br /> 
+                                        받는 피해가 12% 감소합니다.</td>
+                                    <td>95%</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/ico_2st.png" alt="" /></td>
+                                    <td>
+                                        <div>
+                                            <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                            <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                            <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                            <span>신속의어둠</span>
+                                        </div>
+                                    </td>
+                                    <td>보스에게 입히는 피해가 12 % 증가,<br /> 
+                                        받는 피해가 12% 감소합니다.</td>
+                                    <td>95%</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/ico_3st.png" alt="" /></td>
+                                    <td>
+                                        <div>
+                                            <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                            <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                            <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                            <span>신속의어둠</span>
+                                        </div>
+                                    </td>
+                                    <td>보스에게 입히는 피해가 12 % 증가,<br /> 
+                                        받는 피해가 12% 감소합니다.</td>
+                                    <td>95%</td>
+                                </tr>
+                                -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div><!-- tab2 -->
             <div id="tab-3" class="tab-content">
@@ -340,46 +362,56 @@
                                 <th>셋팅비율</th>
                             </tr>
                         </thead>
-                        <tbody id="item_option_list">
-                        <!--
-                            <tr>
-                                <td><img src="images/ico_1st.png" alt="" /></td>
-                                <td>공격시 마나 회복량</td>
-                                <td>9,999,999</td>
-                                <td>
-                                    <div class="progress_wrap">
-                                        <div class="flag"></div>
-                                        <div class="line_wrap"><span style="width:80%"></span></div>
-                                    </div>
-                                    <div class="sum">80%</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/ico_2st.png" alt="" /></td>
-                                <td>공격시 마나 회복량</td>
-                                <td>9,999,999</td>
-                                <td>
-                                    <div class="progress_wrap">
-                                        <div class="flag"></div>
-                                        <div class="line_wrap"><span style="width:90%"></span></div>
-                                    </div>
-                                    <div class="sum">90%</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/ico_3st.png" alt="" /></td>
-                                <td>공격시 마나 회복량</td>
-                                <td>9,999,999</td>
-                                <td>
-                                    <div class="progress_wrap">
-                                        <div class="flag"></div>
-                                        <div class="line_wrap"><span style="width:90%"></span></div>
-                                    </div>
-                                    <div class="sum">90%</div>
-                                </td>
-                            </tr>
-                            -->
-                        </tbody>
+                    </table>
+                    <table>
+                        <colgroup>
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="40%" />
+                        </colgroup>
+                        <div class="table_scroll_wrap">
+                            <tbody id="item_option_list">
+                            <!--
+                                <tr>
+                                    <td><img src="images/ico_1st.png" alt="" /></td>
+                                    <td>공격시 마나 회복량</td>
+                                    <td>9,999,999</td>
+                                    <td>
+                                        <div class="progress_wrap">
+                                            <div class="flag"></div>
+                                            <div class="line_wrap"><span style="width:80%"></span></div>
+                                        </div>
+                                        <div class="sum">80%</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/ico_2st.png" alt="" /></td>
+                                    <td>공격시 마나 회복량</td>
+                                    <td>9,999,999</td>
+                                    <td>
+                                        <div class="progress_wrap">
+                                            <div class="flag"></div>
+                                            <div class="line_wrap"><span style="width:90%"></span></div>
+                                        </div>
+                                        <div class="sum">90%</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/ico_3st.png" alt="" /></td>
+                                    <td>공격시 마나 회복량</td>
+                                    <td>9,999,999</td>
+                                    <td>
+                                        <div class="progress_wrap">
+                                            <div class="flag"></div>
+                                            <div class="line_wrap"><span style="width:90%"></span></div>
+                                        </div>
+                                        <div class="sum">90%</div>
+                                    </td>
+                                </tr>
+                                -->
+                            </tbody>
+                        </div>
                     </table>
                 </div>
             </div> 
