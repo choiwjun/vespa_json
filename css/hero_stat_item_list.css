@@ -238,7 +238,7 @@ html.body{height:100%}
 }
 @media all and (min-width:768px) and (max-width:1023px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:20rem;}
-    .table_scroll_wrap{overflow-y:scroll;height:100rem;}
+    .table_scroll_wrap{overflow-y:scroll;height:29rem;}
     .form-control:first-child{margin-right:10px}
     .hero_stat_item_list_head{
         background-image:url('../images/bg_hero_stat_item_head.png'); 
@@ -348,7 +348,7 @@ html.body{height:100%}
 }
 @media all and (min-width:737px) and (max-width:812px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:24rem}
-    .table_scroll_wrap{overflow-y:scroll;height:50rem;}
+    .table_scroll_wrap{overflow-y:scroll;height:16rem;}
     .form-control:first-child{margin-right:10px}
     .hero_stat_item_list_head{
         background-image:url('../images/bg_hero_stat_item_head.png'); 
