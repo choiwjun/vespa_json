@@ -16,7 +16,7 @@ html.body{height:100%}
 
 @media all and (min-width:1025px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:24rem;}
-    .table_scroll_wrap{overflow-y:scroll;height:100rem;}
+    .table_scroll_wrap{overflow-y:scroll;height:80rem;}
     .form-control:first-child{margin-right:10px}
     .hero_stat_item_list_head{
         background-image:url('../images/bg_hero_stat_item_head.png'); 
@@ -127,7 +127,7 @@ html.body{height:100%}
 }
 @media all and (max-width:1024px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:24rem}
-    .table_scroll_wrap{overflow-y:scroll;height:100rem;}
+    .table_scroll_wrap{overflow-y:scroll;height:80rem;}
     .form-control:first-child{margin-right:10px}
     .hero_stat_item_list_head{
         background-image:url('../images/bg_hero_stat_item_head.png'); 
@@ -238,7 +238,7 @@ html.body{height:100%}
 }
 @media all and (min-width:768px) and (max-width:1023px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:20rem;}
-    .table_scroll_wrap{overflow-y:scroll;height:29rem;}
+    .table_scroll_wrap{overflow-y:scroll;height:18rem;}
     .form-control:first-child{margin-right:10px}
     .hero_stat_item_list_head{
         background-image:url('../images/bg_hero_stat_item_head.png'); 
@@ -571,7 +571,7 @@ html.body{height:100%}
 }
 @media all and (min-width:641px) and (max-width:667px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:18rem}
-    .table_scroll_wrap{overflow-y:scroll;height:20rem;}
+    .table_scroll_wrap{overflow-y:scroll;height:17rem;}
     .form-control:first-child{margin-right:10px}
     .hero_stat_item_list_head{
         background-image:url('../images/bg_hero_stat_item_head.png'); 
@@ -682,7 +682,7 @@ html.body{height:100%}
 }
 @media all and (min-width:569px) and (max-width:640px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:13rem}
-    .table_scroll_wrap{overflow-y:scroll;height:20rem;}
+    .table_scroll_wrap{overflow-y:scroll;height:14rem;}
     .form-control:first-child{margin-right:10px}
     .hero_stat_item_list_head{
         background-image:url('../images/bg_hero_stat_item_head.png'); 
