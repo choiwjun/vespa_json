@@ -127,7 +127,7 @@ html.body{height:100%}
 }
 @media all and (max-width:1024px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:24rem}
-    .table_scroll_wrap{overflow-y:scroll;height:80rem;}
+    .table_scroll_wrap{overflow-y:scroll;height:50rem;}
     .form-control:first-child{margin-right:10px}
     .hero_stat_item_list_head{
         background-image:url('../images/bg_hero_stat_item_head.png'); 
