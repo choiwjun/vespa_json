@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/style.js"></script>
+    <link rel="stylesheet" href="css/content_stat_party_list_detail.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <script>
+        $(document).ready(function(){
+            $('.table_wrap table td:nth-child(7) img').click(function(){
+                $(this).parent().children('.tool').toggle()
+            })
+        })
+    </script>
+    <div class="hero_stat_list_wrap">
+        <div class="hero_stat_item_list_head">
+            <h1>
+                <img src="images/img_hero_stat_list_head_arrow.png" alt="" />
+                클리어파티 영웅상세 정보
+            </h1>
+        </div>
+        <div class="hero_stat_item_list_content">
+            <div id="tab-1" class="tab-content current">
+                <div class="table_wrap">
+                    <table>
+                        <colgroup>
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>순위</th>
+                                <th>영웅</th>
+                                <th>세트</th>
+                                <th>옵션1</th>
+                                <th>옵션2</th>
+                                <th>옵션3</th>
+                                <th>보물</th>
+                                <th>초월</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="images/img_hero_stat_1.png" /></td>
+                                <td>회심의화염</td>
+                                <td>공격시 마나회복량<br />9,999,999</td>
+                                <td>초당 마나회복량<br />9,999,999</td>
+                                <td>모든 블록 확률<br />9,999,999</td>
+                                <td><img src="images/ico_hero_treasure.png"  />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
+                                <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="images/img_hero_stat_1.png" /></td>
+                                <td>회심의화염</td>
+                                <td>공격시 마나회복량<br />9,999,999</td>
+                                <td>초당 마나회복량<br />9,999,999</td>
+                                <td>모든 블록 확률<br />9,999,999</td>
+                                <td><img src="images/ico_hero_treasure.png"  />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
+                                <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">마왕카셀 <span>초월특성</span></h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <h2>1</h2>
+                                <div>
+                                    <ul>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>2</h2>
+                                <div>
+                                    <ul>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>3</h2>
+                                <div>
+                                    <ul>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on"/></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>5</h2>
+                                <div>
+                                    <ul>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal">확인</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div><!-- tab1 -->
+        </div>
+    </div>
+  </body>
+</html>

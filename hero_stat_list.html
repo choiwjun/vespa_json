@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.ajax-cross-origin.min.js"></script>
+    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/style.js"></script>
+    <link rel="stylesheet" href="css/hero_stat_list.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div name="test"></div>
+    <div class="hero_stat_list_wrap">
+        <div class="hero_stat_list_head">
+            <h1>
+                <img src="images/img_hero_stat_list_head_arrow.png" alt="" />
+                영웅선택
+                <span>왼쪽조건으로 검색하실 수 있습니다.</span>
+            </h1>
+        </div>
+        <div class="hero_stat_list_menu">
+            <div>
+                <ul>
+                    <li>
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>&nbsp;<label for="inlineRadio1"><span></span>전체 영웅</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">&nbsp;<label for="inlineRadio2"><span></span>소유한 영웅</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">&nbsp;<label for="inlineRadio3"><span></span>미보유 영웅</label>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio4" value="option4" checked>&nbsp;<label for="inlineRadio4"><span></span>전체 영웅</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio5" value="option5">&nbsp;<label for="inlineRadio5"><span></span>기사</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio6" value="option6">&nbsp;<label for="inlineRadio6"><span></span>전사</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio7" value="option7">&nbsp;<label for="inlineRadio7"><span></span>암살자</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio8" value="option8">&nbsp;<label for="inlineRadio8"><span></span>궁수</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio9" value="option9">&nbsp;<label for="inlineRadio9"><span></span>기계공</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio10" value="option10">&nbsp;<label for="inlineRadio10"><span></span>마법사</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio11" value="option11">&nbsp;<label for="inlineRadio11"><span></span>사제</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero_stat_list_img_wrap">
+            <div class="row">
+                <ul id="here_ajax_list_ul">
+                    <!--
+                    <li>
+                        <span>글렌위스</span>
+                        <img src="images/img_hero_stat_1.png" alt="hero_img" />
+                    </li>
+                    -->
+                </ul>
+            </div>
+            
+        </div>
+        <div class="hero_select_btn">
+            <button>선택완료</button>
+        </div>
+    </div>
+  <script>
+      function hero_ajax_list() {
+          $.ajax({
+              crossDomain: true,
+              url: "https://s3.ap-northeast-2.amazonaws.com/game-stats.kingsraid.com/live/kr-stats/v1/localizations/ko.json",
+              success: function (data) {
+                  var leng_kor = data;
+                  $.ajax({
+                      crossDomain: true,
+                      url: "https://s3.ap-northeast-2.amazonaws.com/game-stats.kingsraid.com/live/kr-stats/v1/static/proto.json",
+                      success: function (data) {
+                          responseObject = data;
+                          var i = 1;
+                          do {
+                              if (responseObject.TAG_TYPE[i] != 'undefined') {
+                                  for (var z = 0; z < responseObject.TAG_TYPE[i].length; z++) {
+                                      $("#here_ajax_list_ul").append(
+                                          '                    <li>\n' +
+                                          '                        <span>' + leng_kor.CREATURE_NAME[responseObject.TAG_TYPE[i][z]] + '</span>\n' +
+                                          '                        <img src="https://s3.ap-northeast-2.amazonaws.com/game-stats.kingsraid.com/live/kr-stats/v1/static/hero-icons/'+responseObject.TAG_TYPE[i][z]+'.png" alt="hero_img" />\n' +
+                                          '                    </li>'
+                                      );
+                                  }
+                              }
+                              i += 1;
+                          } while (i < 8);
+                          console.log(responseObject);
+                          return responseObject;
+                      }
+                  });
+              }
+          });
+      }
+      $(document).ready(function(){ hero_ajax_list(); });
+  </script>
+  </body>
+</html>

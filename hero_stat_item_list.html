@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.ajax-cross-origin.min.js"></script>
+    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/style.js"></script>
+    <link rel="stylesheet" href="css/hero_stat_item_list.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <script>
+        $(document).ready(function(){
+            $('#tab-1 td:nth-child(4) img').click(function(){
+                $(this).parent().children('.tool').toggle()
+            })
+        })
+    </script>
+    <div class="hero_stat_list_wrap">
+        <div class="hero_stat_item_list_head">
+            <div>
+                <img src="images/img_hero_stat_list_head_arrow.png" alt="" />
+            </div>
+            <div>
+                <select class="form-control">
+                    <option>클래스리스트</option>
+                    <option>기사</option>
+                    <option>전사</option>
+                    <option>암살자</option>
+                    <option>궁수</option>
+                </select>
+                <select class="form-control">
+                    <option>영웅리스트</option>
+                    <option>테일리</option>
+                    <option>도자르타</option>
+                    <option>글렌위스</option>
+                    <option>로만</option>
+                </select>
+            </div>
+        </div>
+        <div class="hero_stat_item_list_content">
+            <ul class="tabs">
+                <li class="tab-link current" data-tab="tab-1"><img src="images/img_hero_tab_on1_bg.png" />영웅정보</li>
+                <li class="tab-link" data-tab="tab-2"><img src="images/img_hero_tab_off2_bg.png" />아이템셋트</li>
+                <li class="tab-link" data-tab="tab-3"><img src="images/img_hero_tab_off3_bg.png" />아이템메뉴</li>
+            </ul>
+            <script>
+                $(document).ready(function(){
+                    $('.tabs li').click(function(){
+                        if($('.tabs li:first-child').hasClass('current')){
+                            $('.tabs li:first-child img').attr('src','images/img_hero_tab_on1_bg.png');
+                            $('.tabs li:nth-child(2) img').attr('src','images/img_hero_tab_off2_bg.png');
+                            $('.tabs li:last-child img').attr('src','images/img_hero_tab_off3_bg.png');
+                        }
+                        else if($('.tabs li:nth-child(2)').hasClass('current')){
+                            $('.tabs li:nth-child(2) img').attr('src','images/img_hero_tab_on2_bg.png');
+                            $('.tabs li:first-child img').attr('src','images/img_hero_tab_off1_bg.png');
+                            $('.tabs li:last-child img').attr('src','images/img_hero_tab_off3_bg.png');
+                        }
+                        else if($('.tabs li:last-child').hasClass('current')){
+                            $('.tabs li:last-child img').attr('src','images/img_hero_tab_on3_bg.png');
+                            $('.tabs li:first-child img').attr('src','images/img_hero_tab_off1_bg.png');
+                            $('.tabs li:nth-child(2) img').attr('src','images/img_hero_tab_off2_bg.png');
+                        }
+                    })
+                })
+            </script>
+            <div id="tab-1" class="tab-content current">
+                <div class="table_wrap">
+                    <table>
+                        <colgroup>
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>순위</th>
+                                <th>컨텐츠</th>
+                                <th>영웅순위</th>
+                                <th>보물</th>
+                                <th>초월특성</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hero_list">
+                        <!--
+                            <tr>
+                                <td><img src="images/ico_1st.png" alt="" /></td>
+                                <td>블랙 드래곤 8T 1단계</td>
+                                <td>12위</td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
+                                <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/ico_2st.png" alt="" /></td>
+                                <td>블랙 드래곤 8T 1단계</td>
+                                <td>12위</td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
+                                <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/ico_3st.png" alt="" /></td>
+                                <td>블랙 드래곤 8T 1단계</td>
+                                <td>12위</td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
+                                <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>블랙 드래곤 8T 1단계</td>
+                                <td>12위</td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
+                                <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>블랙 드래곤 8T 1단계</td>
+                                <td>12위</td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
+                                <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>블랙 드래곤 8T 1단계</td>
+                                <td>12위</td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
+                                <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
+                            </tr>
+                            -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">마왕카셀 <span>초월특성</span></h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <h2>1</h2>
+                                <div>
+                                    <ul>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>2</h2>
+                                <div>
+                                    <ul>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>3</h2>
+                                <div>
+                                    <ul>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>5</h2>
+                                <div>
+                                    <ul>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal">확인</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div><!-- tab1 -->
+            <div id="tab-2" class="tab-content">
+                <div class="table_wrap">
+                    <table>
+                        <colgroup>
+                            <col width="" />
+                            <col width="25%" />
+                            <col width="" />
+                            <col width="" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>순위</th>
+                                <th>아이템 세트</th>
+                                <th>세트옵션</th>
+                                <th>착용비율</th>
+                            </tr>
+                        </thead>
+                        <tbody id="item_list">
+                        <!--
+                            <tr>
+                                <td><img src="images/ico_1st.png" alt="" /></td>
+                                <td>
+                                    <div>
+                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                        <span>신속의어둠</span>
+                                    </div>
+                                </td>
+                                <td>보스에게 입히는 피해가 12 % 증가,<br /> 
+                                    받는 피해가 12% 감소합니다.</td>
+                                <td>95%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/ico_2st.png" alt="" /></td>
+                                <td>
+                                    <div>
+                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                        <span>신속의어둠</span>
+                                    </div>
+                                </td>
+                                <td>보스에게 입히는 피해가 12 % 증가,<br /> 
+                                    받는 피해가 12% 감소합니다.</td>
+                                <td>95%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/ico_3st.png" alt="" /></td>
+                                <td>
+                                    <div>
+                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />
+                                        <span>신속의어둠</span>
+                                    </div>
+                                </td>
+                                <td>보스에게 입히는 피해가 12 % 증가,<br /> 
+                                    받는 피해가 12% 감소합니다.</td>
+                                <td>95%</td>
+                            </tr>
+                            -->
+                        </tbody>
+                    </table>
+                </div>
+            </div><!-- tab2 -->
+            <div id="tab-3" class="tab-content">
+                <div class="table_wrap">
+                    <table>
+                        <colgroup>
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="40%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>순위</th>
+                                <th>옵션</th>
+                                <th>평균수치</th>
+                                <th>셋팅비율</th>
+                            </tr>
+                        </thead>
+                        <tbody id="item_option_list">
+                        <!--
+                            <tr>
+                                <td><img src="images/ico_1st.png" alt="" /></td>
+                                <td>공격시 마나 회복량</td>
+                                <td>9,999,999</td>
+                                <td>
+                                    <div class="progress_wrap">
+                                        <div class="flag"></div>
+                                        <div class="line_wrap"><span style="width:80%"></span></div>
+                                    </div>
+                                    <div class="sum">80%</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/ico_2st.png" alt="" /></td>
+                                <td>공격시 마나 회복량</td>
+                                <td>9,999,999</td>
+                                <td>
+                                    <div class="progress_wrap">
+                                        <div class="flag"></div>
+                                        <div class="line_wrap"><span style="width:90%"></span></div>
+                                    </div>
+                                    <div class="sum">90%</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/ico_3st.png" alt="" /></td>
+                                <td>공격시 마나 회복량</td>
+                                <td>9,999,999</td>
+                                <td>
+                                    <div class="progress_wrap">
+                                        <div class="flag"></div>
+                                        <div class="line_wrap"><span style="width:90%"></span></div>
+                                    </div>
+                                    <div class="sum">90%</div>
+                                </td>
+                            </tr>
+                            -->
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script>
+        var hero_no = location.search.split('hero_no=')[1];
+        function hero_ajax_list() {
+            $.ajax({
+                crossDomain: true,
+                url: "https://s3.ap-northeast-2.amazonaws.com/game-stats.kingsraid.com/live/kr-stats/v1/localizations/ko.json",
+                success: function (data) {
+                    lang_kor = data;
+                    // 영웅정보 가져오기
+                    $.ajax({
+                        crossDomain: true,
+                        url: "https://s3.ap-northeast-2.amazonaws.com/game-stats.kingsraid.com/live/kr-stats/v1/heros/contents/"+hero_no+".json",
+                        success: function (data) {
+                            responseObject = data;
+                            if (responseObject.Ranks != 'undefined') {
+                                for (var z = 0; z < responseObject.Ranks.length; z++) {
+                                    var BattleIndex = lang_kor.DUNGEON_NAME.SMALL_CATEGORY[responseObject.Ranks[z]['BattleIndex']];
+                                    var TreasureItemIndex = responseObject.Ranks[z]['TreasureItemIndex'];
+                                    var TreasureItemName = lang_kor.ITEM_NAME[responseObject.Ranks[z]['TreasureItemIndex']];
+                                    var DungeonRank = responseObject.Ranks[z]['DungeonRank'];
+                                    var rank_no = z + 1;
+                                    if(rank_no < 4){
+                                        rank_no = '<img src="images/ico_'+rank_no+'st.png" alt="" />';
+                                    }
+                                    $("#hero_list").append(
+                                        '\n' +
+                                        '                            <tr>\n' +
+                                        '                                <td>'+rank_no+'</td>\n' +
+                                        '                                <td>'+BattleIndex+'</td>\n' +
+                                        '                                <td>'+DungeonRank+'위</td>\n' +
+                                        '                                <td><img src="https://s3.ap-northeast-2.amazonaws.com/game-stats.kingsraid.com/live/kr-stats/v1/static/item-icons/'+TreasureItemIndex+'.png" alt="보물" />\n' +
+                                        '                                    <div class="tool">\n' +
+                                        '                                        <p>\n' +
+                                        '                                            '+TreasureItemName+'\n' +
+                                        '                                        </p>\n' +
+                                        '                                    </div>\n' +
+                                        '                                </td>\n' +
+                                        '                                <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>\n' +
+                                        '                            </tr>'
+                                    );
+                                }
+                            }
+                        }
+                    });
+                    // 아이템 세트 정보 가져오기
+                    $.ajax({
+                        crossDomain: true,
+                        url: "https://s3.ap-northeast-2.amazonaws.com/game-stats.kingsraid.com/live/kr-stats/v1/heros/setitems/"+hero_no+".json",
+                        success: function (data) {
+                            responseObject = data;
+                            if (responseObject.Ranks != 'undefined') {
+                                for (var z = 0; z < responseObject.Ranks.length; z++) {
+                                    var SetIndex = responseObject.Ranks[z]['SetIndex'];
+                                    var SetName = lang_kor.DUNGEON_NAME.SMALL_CATEGORY[SetIndex];
+                                    var OptionIndex = responseObject.Ranks[z]['OptionIndex'];
+                                    var OptionName = lang_kor.OPERATION_TYPE[OptionIndex] + ' ' + responseObject.Ranks[z]['OptionValue'] + '%';
+                                    var EquipRatio = responseObject.Ranks[z]['EquipRatio'];
+                                    var rank_no = z + 1;
+                                    if(rank_no < 4){
+                                        rank_no = '<img src="images/ico_'+rank_no+'st.png" alt="" />';
+                                    }
+                                    $("#item_list").append(
+                                        '\n' +
+                                        '                            <tr>\n' +
+                                        '                                <td>'+rank_no+'</td>\n' +
+                                        '                                <td>\n' +
+                                        '                                    <div>\n' +
+                                        '                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />\n' +
+                                        '                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />\n' +
+                                        '                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />\n' +
+                                        '                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />\n' +
+                                        '                                        <img src="images/img_hero_stat_table2_item.png" alt="item" />\n' +
+                                        '                                        <span>'+SetName+'</span>\n' +
+                                        '                                    </div>\n' +
+                                        '                                </td>\n' +
+                                        '                                <td>' + OptionName+'</td>\n' +
+                                        '                                <td>'+EquipRatio+'%</td>\n' +
+                                        '                            </tr>'
+                                    );
+                                }
+                            }
+                        }
+                    });
+                    // 아이템 옵션 정보 가져오기
+                    $.ajax({
+                        crossDomain: true,
+                        url: "https://s3.ap-northeast-2.amazonaws.com/game-stats.kingsraid.com/live/kr-stats/v1/heros/item-options/"+hero_no+".json",
+                        success: function (data) {
+                            responseObject = data;
+                            if (responseObject.Ranks != 'undefined') {
+                                for (var z = 0; z < responseObject.Ranks.length; z++) {
+                                    var OptionIndex = responseObject.Ranks[z]['OptionIndex'];
+                                    var OptionName = lang_kor.OPERATION_TYPE[OptionIndex];
+                                    var OptionValue = responseObject.Ranks[z]['OptionValue'];
+                                    var SetRatio = responseObject.Ranks[z]['SetRatio'];
+                                    var rank_no = z + 1;
+                                    if(rank_no < 4){
+                                        rank_no = '<img src="images/ico_'+rank_no+'st.png" alt="" />';
+                                    }
+                                    $("#item_option_list").append(
+                                        '\n' +
+                                        '                            <tr>\n' +
+                                        '                                <td>'+rank_no+'</td>\n' +
+                                        '                                <td>'+OptionName+'</td>\n' +
+                                        '                                <td>'+OptionValue+'</td>\n' +
+                                        '                                <td>\n' +
+                                        '                                    <div class="progress_wrap">\n' +
+                                        '                                        <div class="flag"></div>\n' +
+                                        '                                        <div class="line_wrap"><span style="width:'+SetRatio+'%"></span></div>\n' +
+                                        '                                    </div>\n' +
+                                        '                                    <div class="sum">'+SetRatio+'%</div>\n' +
+                                        '                                </td>\n' +
+                                        '                            </tr>'
+                                    );
+                                }
+                            }
+                        }
+                    });
+                }
+            });
+        }
+        $(document).ready(function(){ hero_ajax_list(); });
+    </script>
+  </body>
+</html>
