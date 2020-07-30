@@ -2,8 +2,7 @@ body{font-size:62.5%}
 html.body{height:100%}
 * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
 #tab-1 table td:nth-child(4){position: relative;}
-.tool{position: absolute;left:-140px;top:8px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
-.tool p{margin:0}
+.tool p{margin:0;letter-spacing:-1px;}
 .modal-title{font-weight:700 !important;}
 .table_wrap,.modal-content{
     -ms-overflow-style: none; /* IE and Edge */
@@ -13,7 +12,7 @@ html.body{height:100%}
     width: 0 !important /* Chrome, Safari, Opera*/
 }
 .select_wrap{float:left;}
-
+.table_wrap{margin-top:0 !important}
 @media all and (min-width:1025px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:24rem;}
     .table_scroll_wrap{overflow-y:scroll;height:80rem;}
@@ -123,7 +122,7 @@ html.body{height:100%}
     #tab-1 .table_wrap table td:nth-child(4) img{border-radius:10px;border:2px solid #7a8ca1}
     #tab-1 .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.4rem;padding:1rem 2rem}
     #tab-2 .table_wrap table td:nth-child(1),#tab-3 .table_wrap table td:nth-child(1){background:none !important;}
-    .tool{position: absolute;left:-140px;top:10px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-50px;width:15rem}
 }
 @media all and (max-width:1024px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:24rem}
@@ -234,7 +233,7 @@ html.body{height:100%}
     #tab-1 .table_wrap table td:nth-child(4) img{border-radius:10px;border:2px solid #7a8ca1}
     #tab-1 .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.4rem;padding:1rem 2rem}
     #tab-2 .table_wrap table td:nth-child(1),#tab-3 .table_wrap table td:nth-child(1){background:none !important;}
-    .tool{position: absolute;left:-160px;top:10px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-90px;width:15rem}
 }
 @media all and (min-width:768px) and (max-width:1023px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:20rem;}
@@ -344,7 +343,7 @@ html.body{height:100%}
     #tab-1 .table_wrap table td:nth-child(4) img{border-radius:10px;border:2px solid #7a8ca1}
     #tab-1 .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.4rem;padding:1rem 2rem}
     #tab-2 .table_wrap table td:nth-child(1),#tab-3 .table_wrap table td:nth-child(1){background:none !important;}
-    .tool{position: absolute;left:-160px;top:10px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-90px;width:15rem}
 }
 @media all and (min-width:737px) and (max-width:812px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:24rem}
@@ -456,7 +455,7 @@ html.body{height:100%}
     #tab-2 .table_wrap table td:nth-child(1),#tab-3 .table_wrap table td:nth-child(1){background:none !important;}
     .hero_stat_list_wrap{height:37.5rem;}
     .table_wrap{height:22rem;overflow-y:scroll;}
-    .tool{position: absolute;left:-160px;top:10px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-105px;width:15rem}
 }
 @media all and (min-width:668px) and (max-width:736px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:18rem}
@@ -567,7 +566,7 @@ html.body{height:100%}
     #tab-1 .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.4rem;padding:1rem 2rem}
     #tab-2 .table_wrap table td:nth-child(1),#tab-3 .table_wrap table td:nth-child(1){background:none !important;}
 .hero_stat_list_wrap{height:41.4rem;}
-    .tool{position: absolute;left:-170px;top:10px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
+.tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-115px;width:15rem}
 }
 @media all and (min-width:641px) and (max-width:667px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:18rem}
@@ -678,7 +677,7 @@ html.body{height:100%}
     #tab-1 .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.4rem;padding:1rem 2rem}
     #tab-2 .table_wrap table td:nth-child(1),#tab-3 .table_wrap table td:nth-child(1){background:none !important;}
 .hero_stat_list_wrap{height:37.5rem;}
-    .tool{position: absolute;left:-170px;top:10px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
+.tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-115px;width:15rem}
 }
 @media all and (min-width:569px) and (max-width:640px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:13rem}
@@ -789,7 +788,7 @@ html.body{height:100%}
     #tab-1 .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.4rem;padding:1rem 2rem}
     #tab-2 .table_wrap table td:nth-child(1),#tab-3 .table_wrap table td:nth-child(1){background:none !important;}
 .hero_stat_list_wrap{height:36rem;}
-    .tool{position: absolute;left:-170px;top:10px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
+.tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-115px;width:15rem}
 }
 @media all and (max-width:568px){
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:13rem}
@@ -893,6 +892,6 @@ html.body{height:100%}
         box-shadow: 0 0 0 1pt #1fb7ba;position: absolute;z-index:1}
     .line_wrap span{background:#1fb7ba;height:0.7rem;display:inline-block;float:left;border-radius:10px;}
     .sum{float:right;margin-right:15px}
-    .tool{position: absolute;left:-175px;top:10px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-125px;width:15rem}
 
 }
