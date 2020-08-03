@@ -21,9 +21,17 @@
   <body>
     <script>
         $(document).ready(function(){
-            $('#hero_list td:nth-child(4) img').click(function(){
-                $(this).parent().children('.tool').toggle()
-            })
+            var timer;
+            $('.tool_img').on("mousedown",function(){
+                var class_chk = $(this);
+                timer = setTimeout(function(){
+                    $(class_chk).parent().children('.tool').show()
+                },300);
+            }).on("mouseup mouseleave",function(){
+                var class_chk = $(this);
+                clearTimeout(timer);
+                $(class_chk).parent().children('.tool').hide()
+            });
         })
     </script>
     <div class="hero_stat_list_wrap">
@@ -103,12 +111,11 @@
                             <col width="23%" />
                         </colgroup>
                         <tbody id="hero_list">
-                        <!--
-                            <tr>
+                            <!--<tr>
                                 <td><img src="images/ico_1st.png" alt="" /></td>
                                 <td>블랙 드래곤 8T 1단계</td>
                                 <td>12위</td>
-                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" class="tool_img" />
                                     <div class="tool">
                                         <p>
                                             알수없는 그림이 담긴 액자
@@ -121,7 +128,7 @@
                                 <td><img src="images/ico_2st.png" alt="" /></td>
                                 <td>블랙 드래곤 8T 1단계</td>
                                 <td>12위</td>
-                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" class="tool_img" />
                                     <div class="tool">
                                         <p>
                                             알수없는 그림이 담긴 액자
@@ -134,7 +141,7 @@
                                 <td><img src="images/ico_3st.png" alt="" /></td>
                                 <td>블랙 드래곤 8T 1단계</td>
                                 <td>12위</td>
-                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" class="tool_img" />
                                     <div class="tool">
                                         <p>
                                             알수없는 그림이 담긴 액자
@@ -143,6 +150,7 @@
                                 </td>
                                 <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
                             </tr>
+                            
                             <tr>
                                 <td>4</td>
                                 <td>블랙 드래곤 8T 1단계</td>
@@ -181,8 +189,7 @@
                                     </div>
                                 </td>
                                 <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
-                            </tr>
-                            -->
+                            </tr>-->
                         </tbody>
                     </table>
                     </div>
@@ -347,10 +354,10 @@
                 <div class="table_wrap">
                     <table>
                         <colgroup>
-                            <col width="" />
-                            <col width="" />
-                            <col width="" />
-                            <col width="40%" />
+                            <col width="10%" />
+                            <col width="30%" />
+                            <col width="15%" />
+                            <col width="45%" />
                         </colgroup>
                         <thead>
                             <tr>
@@ -361,14 +368,15 @@
                             </tr>
                         </thead>
                     </table>
+                    <div class="table_scroll_wrap">
                     <table>
                         <colgroup>
-                            <col width="" />
-                            <col width="" />
-                            <col width="" />
-                            <col width="40%" />
+                            <col width="10%" />
+                            <col width="30%" />
+                            <col width="15%" />
+                            <col width="45%" />
                         </colgroup>
-                        <div class="table_scroll_wrap">
+                        
                             <tbody id="item_option_list">
                             <!--
                                 <tr>
@@ -455,12 +463,19 @@
                                         '                                <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>\n' +
                                         '                            </tr>'
                                     );
-                                        
                                 }
+                                var timer;
+                                $('.tool_img').on("vmousedown touchstart mousedown",function(){
+                                    var class_chk = $(this);
+                                    timer = setTimeout(function(){
+                                        $(class_chk).parent().children('.tool').show()
+                                    },300);
+                                }).on("vmouseup touchend mouseup mouseleave",function(){
+                                    var class_chk = $(this);
+                                    clearTimeout(timer);
+                                    $(class_chk).parent().children('.tool').hide()
+                                });
                             }
-                            $('.tool_img').click(function(){
-                                $(this).parent().children('.tool').toggle()
-                            })
                         }
                     });
                     // 아이템 세트 정보 가져오기
@@ -525,11 +540,13 @@
                                         '                                <td>'+OptionName+'</td>\n' +
                                         '                                <td>'+OptionValue+'</td>\n' +
                                         '                                <td>\n' +
-                                        '                                    <div class="progress_wrap">\n' +
-                                        '                                        <div class="flag"></div>\n' +
-                                        '                                        <div class="line_wrap"><span style="width:'+SetRatio+'%"></span></div>\n' +
-                                        '                                    </div>\n' +
-                                        '                                    <div class="sum">'+SetRatio+'%</div>\n' +
+                                        '                                    <div class="progress_wrap_c">\n' +
+                                            '                                    <div class="progress_wrap">\n' +
+                                            '                                        <div class="flag"></div>\n' +
+                                            '                                        <div class="line_wrap"><span style="width:'+SetRatio+'%"></span></div>\n' +
+                                            '                                    </div>\n' +
+                                            '                                    <div class="sum">'+SetRatio+'%</div>\n' +
+                                        '                                    <div>\n' +
                                         '                                </td>\n' +
                                         '                            </tr>'
                                     );
