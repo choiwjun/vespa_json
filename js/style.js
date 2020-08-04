@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.hero_stat_list_head img,.hero_stat_item_list_head img').click(function(){
+    $('.hero_stat_list_head img').click(function(){
         window.history.back();
     })
     $('#here_ajax_list_ul li').click(function(e){

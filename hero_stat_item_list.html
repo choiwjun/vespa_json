@@ -21,6 +21,10 @@
   <body>
     <script>
         $(document).ready(function(){
+            $('.hero_stat_item_list_head img').click(function(){
+                window.location.href = 'hero_stat_list.html';
+            })
+
             var timer;
             $('.tool_img').on("mousedown",function(){
                 var class_chk = $(this);
@@ -278,7 +282,7 @@
                             <col width="10%" />
                             <col width="32%" />
                             <col width="" />
-                            <col width="10%" />
+                            <col width="15%" />
                         </colgroup>
                         <thead>
                             <tr>
@@ -295,7 +299,7 @@
                                 <col width="10%" />
                                 <col width="32%" />
                                 <col width="" />
-                                <col width="10%" />
+                                <col width="15%" />
                             </colgroup>
 
                             <tbody id="item_list">

@@ -20,9 +20,17 @@
   <body>
     <script>
         $(document).ready(function(){
-            $('.table_wrap table td:nth-child(7) img').click(function(){
-                $(this).parent().children('.tool').toggle()
-            })
+            var timer;
+            $('.tool_img').on("vmousedown touchstart mousedown",function(){
+                var class_chk = $(this);
+                timer = setTimeout(function(){
+                    $(class_chk).parent().children('.tool').show()
+                },300);
+            }).on("vmouseup touchend mouseup mouseleave",function(){
+                var class_chk = $(this);
+                clearTimeout(timer);
+                $(class_chk).parent().children('.tool').hide()
+            });
         })
     </script>
     <div class="hero_stat_list_wrap">
@@ -66,7 +74,7 @@
                                 <td>공격시 마나회복량<br />9,999,999</td>
                                 <td>초당 마나회복량<br />9,999,999</td>
                                 <td>모든 블록 확률<br />9,999,999</td>
-                                <td><img src="images/ico_hero_treasure.png"  />
+                                <td><img src="images/ico_hero_treasure.png" class="tool_img" />
                                     <div class="tool">
                                         <p>
                                             알수없는 그림이 담긴 액자
@@ -82,7 +90,7 @@
                                 <td>공격시 마나회복량<br />9,999,999</td>
                                 <td>초당 마나회복량<br />9,999,999</td>
                                 <td>모든 블록 확률<br />9,999,999</td>
-                                <td><img src="images/ico_hero_treasure.png"  />
+                                <td><img src="images/ico_hero_treasure.png" class="tool_img" />
                                     <div class="tool">
                                         <p>
                                             알수없는 그림이 담긴 액자
