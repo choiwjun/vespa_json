@@ -4,11 +4,15 @@ html.body{height:100%}
 #tab-1 table td:nth-child(4){position: relative;}
 .tool p{margin:0;letter-spacing:-1px;}
 .modal-title{font-weight:700 !important;}
-
+.modal-content{width:33rem !important}
 .select_wrap{float:left;}
 .table_wrap{margin-top:0 !important;padding-top:1rem !important}
 .table_wrap table th{padding-bottom:1rem !important}
-
+.modal-body > div{position: relative;margin-bottom:0.5rem !important}
+.modal-body h2{margin:0 !important;position: absolute;top:35%;}
+.modal-body li img{width:3rem !important;height:3rem !important;}
+.modal-body li{margin-right:0.5rem !important;}
+.modal-body ul{overflow:hidden;margin-top:0.5rem !important;margin-bottom:0 !important}
 @media all and (min-width:1025px) {
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:24rem;}
     .table_scroll_wrap{overflow-y:scroll;height:86rem;}
@@ -96,10 +100,10 @@ html.body{height:100%}
     .modal-header{padding-bottom:0}
     .modal-header .close{opacity:1;font-size:30px;font-weight:100;}
     .modal-footer{padding-top:0}
-    .modal-content{width:37rem;margin:0 auto;padding-bottom:0;height:43rem;overflow-y:scroll;}
+    .modal-content{width:35rem;margin:0 auto;padding-bottom:0;overflow-y:scroll;}
     .modal-body{overflow: hidden;clear:both;}
     .modal-body > div{border:1px solid #a2abab;overflow:hidden;padding:0 1rem;margin-bottom:1rem}
-    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;line-height:24px}
+    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;}
     .modal-body li{float:left;display:inline-block;list-style:none;margin-right:1rem;margin-bottom:0.5rem}
     .modal-body li:last-child{margin-right:0}
     .modal-body li img{width:3.6rem;height:3.6rem;vertical-align:top;border-radius:10px;border:2px solid #7a8ca1;}
@@ -208,10 +212,10 @@ html.body{height:100%}
     .modal-header{padding-bottom:0}
     .modal-header .close{opacity:1;font-size:30px;font-weight:100;}
     .modal-footer{padding-top:0}
-    .modal-content{width:37rem;margin:0 auto;padding-bottom:0;height:43rem;overflow-y:scroll;}
+    .modal-content{width:35rem;margin:0 auto;padding-bottom:0;overflow-y:scroll;}
     .modal-body{overflow: hidden;clear:both;}
     .modal-body > div{border:1px solid #a2abab;overflow:hidden;padding:0 1rem;margin-bottom:1rem}
-    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;line-height:24px}
+    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;}
     .modal-body li{float:left;display:inline-block;list-style:none;margin-right:1rem;margin-bottom:0.5rem}
     .modal-body li:last-child{margin-right:0}
     .modal-body li img{width:3.6rem;height:3.6rem;vertical-align:top;border-radius:10px;border:2px solid #7a8ca1;}
@@ -320,10 +324,10 @@ html.body{height:100%}
     .modal-header{padding-bottom:0}
     .modal-header .close{opacity:1;font-size:30px;font-weight:100;}
     .modal-footer{padding-top:0}
-    .modal-content{width:37rem;margin:0 auto;padding-bottom:0;height:35rem;overflow-y:scroll;}
+    .modal-content{width:39rem;margin:0 auto;padding-bottom:0;overflow-y:scroll;}
     .modal-body{overflow: hidden;clear:both;}
     .modal-body > div{border:1px solid #a2abab;overflow:hidden;padding:1rem;margin-bottom:1rem}
-    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;line-height:24px}
+    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;}
     .modal-body li{float:left;display:inline-block;list-style:none;margin-right:1rem;margin-bottom:1rem}
     .modal-body li:last-child{margin-right:0}
     .modal-body li img{width:3.6rem;height:3.6rem;vertical-align:top;}
@@ -436,10 +440,10 @@ html.body{height:100%}
     .modal-header{padding-bottom:0}
     .modal-header .close{opacity:1;font-size:30px;font-weight:100;}
     .modal-footer{padding-top:0}
-    .modal-content{width:37rem;margin:0 auto;padding-bottom:0;height:43rem;overflow-y:scroll;}
+    .modal-content{width:35rem;margin:0 auto;padding-bottom:0;overflow-y:scroll;}
     .modal-body{overflow: hidden;clear:both;}
     .modal-body > div{border:1px solid #a2abab;overflow:hidden;padding:0 1rem;margin-bottom:1rem}
-    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;line-height:24px}
+    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;}
     .modal-body li{float:left;display:inline-block;list-style:none;margin-right:1rem;margin-bottom:0.5rem}
     .modal-body li:last-child{margin-right:0}
     .modal-body li img{width:3.6rem;height:3.6rem;vertical-align:top;border-radius:10px;border:2px solid #7a8ca1;}
@@ -548,10 +552,10 @@ html.body{height:100%}
     .modal-header{padding-bottom:0}
     .modal-header .close{opacity:1;font-size:30px;font-weight:100;}
     .modal-footer{padding-top:0}
-    .modal-content{width:37rem;margin:0 auto;padding-bottom:0;height:43rem;overflow-y:scroll;}
+    .modal-content{width:35rem;margin:0 auto;padding-bottom:0;overflow-y:scroll;}
     .modal-body{overflow: hidden;clear:both;}
     .modal-body > div{border:1px solid #a2abab;overflow:hidden;padding:0 1rem;margin-bottom:1rem}
-    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;line-height:24px}
+    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;}
     .modal-body li{float:left;display:inline-block;list-style:none;margin-right:1rem;margin-bottom:0.5rem}
     .modal-body li:last-child{margin-right:0}
     .modal-body li img{width:3.6rem;height:3.6rem;vertical-align:top;border-radius:10px;border:2px solid #7a8ca1;}
@@ -667,10 +671,10 @@ html.body{height:100%}
     .modal-header{padding-bottom:0}
     .modal-header .close{opacity:1;font-size:30px;font-weight:100;}
     .modal-footer{padding-top:0}
-    .modal-content{width:37rem;margin:0 auto;padding-bottom:0;height:43rem;overflow-y:scroll;}
+    .modal-content{width:35rem;margin:0 auto;padding-bottom:0;overflow-y:scroll;}
     .modal-body{overflow: hidden;clear:both;}
     .modal-body > div{border:1px solid #a2abab;overflow:hidden;padding:0 1rem;margin-bottom:1rem}
-    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;line-height:24px}
+    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;}
     .modal-body li{float:left;display:inline-block;list-style:none;margin-right:1rem;margin-bottom:0.5rem}
     .modal-body li:last-child{margin-right:0}
     .modal-body li img{width:3.6rem;height:3.6rem;vertical-align:top;border-radius:10px;border:2px solid #7a8ca1;}
@@ -779,10 +783,10 @@ html.body{height:100%}
     .modal-header{padding-bottom:0}
     .modal-header .close{opacity:1;font-size:30px;font-weight:100;}
     .modal-footer{padding-top:0}
-    .modal-content{width:37rem;margin:0 auto;padding-bottom:0;height:43rem;overflow-y:scroll;}
+    .modal-content{width:35rem;margin:0 auto;padding-bottom:0;overflow-y:scroll;}
     .modal-body{overflow: hidden;clear:both;}
     .modal-body > div{border:1px solid #a2abab;overflow:hidden;padding:0 1rem;margin-bottom:1rem}
-    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;line-height:24px}
+    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;}
     .modal-body li{float:left;display:inline-block;list-style:none;margin-right:1rem;margin-bottom:0.5rem}
     .modal-body li:last-child{margin-right:0}
     .modal-body li img{width:3.6rem;height:3.6rem;vertical-align:top;border-radius:10px;border:2px solid #7a8ca1;}
@@ -891,10 +895,10 @@ html.body{height:100%}
     .modal-header{padding-bottom:0}
     .modal-header .close{opacity:1;font-size:30px;font-weight:100;}
     .modal-footer{padding-top:0}
-    .modal-content{width:37rem;margin:0 auto;padding-bottom:0;height:35rem;overflow-y:scroll;}
+    .modal-content{width:37rem;margin:0 auto;padding-bottom:0;overflow-y:scroll;}
     .modal-body{overflow: hidden;clear:both;}
     .modal-body > div{border:1px solid #a2abab;overflow:hidden;padding:1rem;margin-bottom:1rem}
-    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;line-height:24px}
+    .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;}
     .modal-body li{float:left;display:inline-block;list-style:none;margin-right:1rem;margin-bottom:1rem}
     .modal-body li:last-child{margin-right:0}
     .modal-body li img{width:3.6rem;height:3.6rem;vertical-align:top;}
