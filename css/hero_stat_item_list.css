@@ -4,13 +4,7 @@ html.body{height:100%}
 #tab-1 table td:nth-child(4){position: relative;}
 .tool p{margin:0;letter-spacing:-1px;}
 .modal-title{font-weight:700 !important;}
-.table_wrap,.modal-content{
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-.table_wrap::-webkit-scrollbar,.modal-content::-webkit-scrollbar,.table_scroll_wrap::-webkit-scrollbar{
-    width: 0 !important /* Chrome, Safari, Opera*/
-}
+
 .select_wrap{float:left;}
 .table_wrap{margin-top:0 !important;padding-top:1rem !important}
 .table_wrap table th{padding-bottom:1rem !important}
