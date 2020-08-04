@@ -20,6 +20,10 @@
   <body>
     <script>
         $(document).ready(function(){
+            $('.hero_stat_item_list_head img').click(function(){
+                window.location.href = 'content_stat_party_list.html';
+            })
+
             var timer;
             $('.tool_img').on("vmousedown touchstart mousedown",function(){
                 var class_chk = $(this);
@@ -45,14 +49,14 @@
                 <div class="table_wrap">
                     <table>
                         <colgroup>
-                            <col width="" />
-                            <col width="" />
-                            <col width="" />
-                            <col width="" />
-                            <col width="" />
-                            <col width="" />
-                            <col width="" />
-                            <col width="" />
+                            <col width="5%" />
+                            <col width="10%" />
+                            <col width="15%" />
+                            <col width="16.5%" />
+                            <col width="16.5%" />
+                            <col width="16.5%" />
+                            <col width="5%" />
+                            <col width="10%" />
                         </colgroup>
                         <thead>
                             <tr>
@@ -66,41 +70,247 @@
                                 <th>초월</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>2</td>
-                                <td><img src="images/img_hero_stat_1.png" /></td>
-                                <td>회심의화염</td>
-                                <td>공격시 마나회복량<br />9,999,999</td>
-                                <td>초당 마나회복량<br />9,999,999</td>
-                                <td>모든 블록 확률<br />9,999,999</td>
-                                <td><img src="images/ico_hero_treasure.png" class="tool_img" />
-                                    <div class="tool">
-                                        <p>
-                                            알수없는 그림이 담긴 액자
-                                        </p>
-                                    </div>
-                                </td>
-                                <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><img src="images/img_hero_stat_1.png" /></td>
-                                <td>회심의화염</td>
-                                <td>공격시 마나회복량<br />9,999,999</td>
-                                <td>초당 마나회복량<br />9,999,999</td>
-                                <td>모든 블록 확률<br />9,999,999</td>
-                                <td><img src="images/ico_hero_treasure.png" class="tool_img" />
-                                    <div class="tool">
-                                        <p>
-                                            알수없는 그림이 담긴 액자
-                                        </p>
-                                    </div>
-                                </td>
-                                <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
-                            </tr>
-                        </tbody>
                     </table>
+                    <div class="table_scroll_wrap">
+                        <table>
+                            <colgroup>
+                                <col width="5%" />
+                                <col width="10%" />
+                                <col width="15%" />
+                                <col width="16.5%" />
+                                <col width="16.5%" />
+                                <col width="16.5%" />
+                                <col width="5%" />
+                                <col width="10%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="images/img_hero_stat_1.png" /></td>
+                                    <td>회심의화염</td>
+                                    <td>공격시 마나회복량<br />9,999,999</td>
+                                    <td>초당 마나회복량<br />9,999,999</td>
+                                    <td>모든 블록 확률<br />9,999,999</td>
+                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
+                                        <div class="tool">
+                                            <p>
+                                                알수없는 그림이 담긴 액자
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

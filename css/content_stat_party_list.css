@@ -12,6 +12,8 @@ ul.tabs li:first-child.current{
     width: 0 !important /* Chrome, Safari, Opera*/
 }
 .modal-title{font-weight:700 !important;}
+.table_wrap table td:nth-child(7){position: relative;}
+.tool p{margin:0;letter-spacing:-1px;}
 @media all and (min-width:1025px) {
     .form-control{font-size:1.4rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:17rem}
     .form-control:first-child,.form-control:nth-child(2){margin-right:10px}
@@ -113,7 +115,7 @@ ul.tabs li:first-child.current{
     .party_select_wrap div:last-child p{float:right;margin-top:1.5rem;font-size:1.4rem;color:#999;margin-left:1.5rem}
     .party_select_wrap div:last-child p img{width:1.5rem;height:1.3rem;}
 
-    .table_wrap{width:100%;padding:2rem;height:79rem;overflow-y:scroll;}
+    .table_wrap{width:100%;padding:2rem 2rem 0 2rem;overflow-y:scroll;}
     .table_wrap table{width:100%;font-size:1.4rem;}
     .table_wrap table td{color:#333;border-top:1px solid #a2abab;border-bottom:1px solid #a2abab;text-align:center;padding:1rem 0;}
     .table_wrap table td:last-child{background: none;}
@@ -121,7 +123,7 @@ ul.tabs li:first-child.current{
     .table_wrap table td:last-child{border-right:1px solid #a2abab}
     .table_wrap table td:nth-child(2){text-align:left;}
     .table_wrap table td:first-child img{width:3.1rem;height:3.1rem;border-radius:10px;}
-    .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:2rem}
+    #tab-1 .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:2rem}
     .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.4rem;padding:1rem 3rem}
     .clear_btn{display:block;margin-top:1rem;font-size:1.2rem;color:#999;margin-left:1rem}
     .clear_btn img{width:1.5rem;height:1.2rem;}
@@ -175,6 +177,10 @@ ul.tabs li:first-child.current{
     .content_table .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;}
     .content_table .table_wrap table td:last-child img{width:3.2rem;height:3.2rem;}
     .content_table .table_wrap table td:nth-child(4),.table_wrap table td:nth-child(5),.table_wrap table td:nth-child(6){text-align:left;padding:0 2rem}
+    .tool{position: absolute;left:-115px;top:15px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;}
+    .tool p{margin:0}
+    .table_scroll_wrap_m{height:75rem;}
+    .table_scroll_wrap{overflow-y:scroll;height:80rem;padding-bottom:2rem}
 }
 @media all and (max-width:1024px) {
     .form-control{font-size:1.4rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:17rem}
@@ -276,7 +282,7 @@ ul.tabs li:first-child.current{
     .party_select_wrap div:last-child p{float:right;margin-top:1.5rem;font-size:1.4rem;color:#999;margin-left:1.5rem}
     .party_select_wrap div:last-child p img{width:1.5rem;height:1.3rem;}
 
-    .table_wrap{width:100%;padding:2rem;height:55rem;overflow-y:scroll;}
+    .table_wrap{width:100%;padding:2rem 2rem 0 2rem;overflow-y:scroll;}
     .table_wrap table{width:100%;font-size:1.4rem;}
     .table_wrap table td{color:#333;border-top:1px solid #a2abab;border-bottom:1px solid #a2abab;text-align:center;padding:1rem 0;}
     .table_wrap table td:last-child{background: none;}
@@ -284,7 +290,7 @@ ul.tabs li:first-child.current{
     .table_wrap table td:last-child{border-right:1px solid #a2abab}
     .table_wrap table td:nth-child(2){text-align:left;}
     .table_wrap table td:first-child img{width:3.1rem;height:3.1rem;border-radius:10px;}
-    .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:2rem}
+    #tab-1 .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:2rem}
     .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.4rem;padding:1rem 3rem}
     .clear_btn{display:block;margin-top:1rem;font-size:1.2rem;color:#999;margin-left:1rem}
     .clear_btn img{width:1.5rem;height:1.2rem;}
@@ -338,8 +344,12 @@ ul.tabs li:first-child.current{
     .content_table .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;}
     .content_table .table_wrap table td:last-child img{width:3.2rem;height:3.2rem;}
     .content_table .table_wrap table td:nth-child(4),.table_wrap table td:nth-child(5),.table_wrap table td:nth-child(6){text-align:left;padding:0 2rem}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-125px;width:15rem}
+    .table_scroll_wrap_m{height:53rem;padding-bottom:2rem}
+    .table_scroll_wrap{overflow-y:scroll;height:58rem;padding-bottom:2rem}
+    .progress_wrap_c{margin:0 auto;width:30rem}
 }
-@media all and (min-width:768px) and (max-width:1023px) {
+@media all and (min-width:824px) and (max-width:1023px) {
     .form-control{font-size:1.4rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:17rem}
     .form-control:first-child,.form-control:nth-child(2){margin-right:10px}
     .hero_stat_item_list_head{
@@ -446,10 +456,10 @@ ul.tabs li:first-child.current{
     .table_wrap table td:first-child{border-left:1px solid #a2abab}
     .table_wrap table td:last-child{border-right:1px solid #a2abab}
     .table_wrap table td:nth-child(2){text-align:left;}
-    .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:2rem}
+    #tab-1 .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:2rem}
     .table_wrap table td:last-child img{width:13.1rem;height:3.65rem;}
     .table_wrap table td:first-child img{width:3.1rem;height:3.1rem;border-radius:10px;}
-    .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:2rem}
+    #tab-1 .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:2rem}
     .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.4rem;padding:1rem 3rem}
     .clear_btn{display:block;margin-top:1rem;font-size:1.2rem;color:#999;margin-left:1rem}
     .clear_btn img{width:1.5rem;height:1.2rem;}
@@ -503,6 +513,15 @@ ul.tabs li:first-child.current{
     .content_table .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;}
     .content_table .table_wrap table td:last-child img{width:3.2rem;height:3.2rem;}
     .content_table .table_wrap table td:nth-child(4),.table_wrap table td:nth-child(5),.table_wrap table td:nth-child(6){text-align:left;padding:0 2rem}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-145px;width:15rem}
+    .table_scroll_wrap_m{height:53rem;padding-bottom:2rem}
+    .table_scroll_wrap{overflow-y:scroll;height:58rem;padding-bottom:2rem}
+}
+/* pixel 2xl*/
+@media all and (min-width:813px) and (max-width:823px){
+    .tool{left:-130px}
+    .table_scroll_wrap_m{height:17.5rem;padding-bottom:2rem}
+    .table_scroll_wrap{overflow-y:scroll;height:22rem;padding-bottom:2rem}
 }
 @media all and (min-width:737px) and (max-width:812px) {
     .form-control{font-size:1.4rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:15rem}
@@ -604,14 +623,14 @@ ul.tabs li:first-child.current{
     .party_select_wrap div:last-child p{float:right;margin-top:1.5rem;font-size:1.4rem;color:#999;margin-left:1.5rem}
     .party_select_wrap div:last-child p img{width:1.5rem;height:1.3rem;}
 
-    .table_wrap{width:100%;padding:2rem;height:16.3rem;overflow-y:scroll;}
+    .table_wrap{width:100%;padding:2rem 2rem 0 2rem;overflow-y:scroll;}
     .table_wrap table{width:100%;font-size:1.4rem;}
     .table_wrap table td{color:#333;border-top:1px solid #a2abab;border-bottom:1px solid #a2abab;text-align:center;padding:1rem 0;}
     .table_wrap table td:last-child{background: none;}
     .table_wrap table td:first-child{border-left:1px solid #a2abab}
     .table_wrap table td:last-child{border-right:1px solid #a2abab}
     .table_wrap table td:nth-child(2){text-align:left;}
-    .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:2rem}
+    #tab-1 .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:2rem}
     .table_wrap table td:last-child img{width:13.1rem;height:3.65rem;}
     .clear_btn{display:block;margin-top:1rem;font-size:1.2rem;color:#999;margin-left:1rem}
     .clear_btn img{width:1.5rem;height:1.2rem;}
@@ -665,8 +684,11 @@ ul.tabs li:first-child.current{
     .content_table .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;}
     .content_table .table_wrap table td:last-child img{width:3.2rem;height:3.2rem;}
     .content_table .table_wrap table td:nth-child(4),.table_wrap table td:nth-child(5),.table_wrap table td:nth-child(6){text-align:left;padding:0 2rem}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-130px;width:15rem}
+    .table_scroll_wrap_m{height:14rem;padding-bottom:2rem}
+    .table_scroll_wrap{overflow-y:scroll;height:19rem;padding-bottom:2rem}
 }
-@media all and (min-width:668px) and (max-width:736px) {
+@media all and (min-width:732px) and (max-width:736px) {
     .form-control{font-size:1.2rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:13rem}
     .form-control:first-child,.form-control:nth-child(2){margin-right:10px}
     .hero_stat_item_list_head{
@@ -766,17 +788,17 @@ ul.tabs li:first-child.current{
     .party_select_wrap div:last-child p{float:right;margin-top:1.5rem;font-size:1.4rem;color:#999;margin-left:1.5rem}
     .party_select_wrap div:last-child p img{width:1.5rem;height:1.3rem;}
 
-    .table_wrap{width:100%;padding:2rem;overflow-y:scroll;height:20rem;}
+    .table_wrap{width:100%;padding:2rem 2rem 0 2rem;overflow-y:scroll;}
     .table_wrap table{width:100%;font-size:1.4rem;}
     .table_wrap table td{color:#333;border-top:1px solid #a2abab;border-bottom:1px solid #a2abab;text-align:center;padding:1rem 0;}
     .table_wrap table td:last-child{background: none;}
     .table_wrap table td:first-child{border-left:1px solid #a2abab}
     .table_wrap table td:last-child{border-right:1px solid #a2abab}
     .table_wrap table td:nth-child(2){text-align:left;}
-    .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:1rem}
+    #tab-1 .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:1rem}
     .table_wrap table td:last-child img{width:13.1rem;height:3.65rem;}
     .table_wrap table td:first-child img{width:3.1rem;height:3.1rem;border-radius:10px;}
-    .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:1rem}
+    #tab-1 .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;margin-right:1rem}
     .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.4rem;padding:1rem 3rem}
     
     .clear_btn{display:block;margin-top:1rem;font-size:1.2rem;color:#999;margin-left:1rem}
@@ -831,6 +853,15 @@ ul.tabs li:first-child.current{
     .content_table .table_wrap table td:nth-child(2) img{width:6rem;height:6rem;border-radius:10px;}
     .content_table .table_wrap table td:last-child img{width:3.2rem;height:3.2rem;}
     .content_table .table_wrap table td:nth-child(4),.table_wrap table td:nth-child(5),.table_wrap table td:nth-child(6){text-align:left;padding:0 2rem}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-135px;width:15rem}
+    .table_scroll_wrap_m{height:17.8rem;padding-bottom:2rem}
+    .table_scroll_wrap{overflow-y:scroll;height:25rem;padding-bottom:2rem}
+}
+/*pixel2*/
+@media all and (min-width:668px) and (max-width:731px) {
+    .table_wrap{height:20rem;}
+    #tab-1 .table_wrap table td:nth-child(2) img{margin-right:1rem;}
+    .tool{left:-150px}
 }
 @media all and (min-width:641px) and (max-width:667px) {
     .form-control{font-size:1.2rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:13rem}
@@ -934,14 +965,14 @@ ul.tabs li:first-child.current{
     .hero_stat_list_wrap{height:37.5rem}
     .table_wrap table td:first-child img{width:3.1rem;height:3.1rem;border-radius:10px;}
     .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.2rem;padding:1rem 2rem}
-    .table_wrap{width:100%;padding:2rem;overflow-y:scroll;height:17rem}
+    .table_wrap{width:100%;padding:2rem 2rem 0 2rem;overflow-y:scroll;}
     .table_wrap table{width:100%;font-size:1.2rem;}
     .table_wrap table td{color:#333;border-top:1px solid #a2abab;border-bottom:1px solid #a2abab;text-align:center;padding:1rem 0;}
     .table_wrap table td:last-child{background: none;}
     .table_wrap table td:first-child{border-left:1px solid #a2abab}
     .table_wrap table td:last-child{border-right:1px solid #a2abab}
     .table_wrap table td:nth-child(2){text-align:left;}
-    .table_wrap table td:nth-child(2) img{width:5rem;height:5rem;border-radius:10px;}
+    #tab-1 .table_wrap table td:nth-child(2) img{width:5rem;height:5rem;border-radius:10px;margin-right:1rem}
     .table_wrap table td:last-child img{width:13.1rem;height:3.65rem;}
     .clear_btn{display:block;margin-top:1rem;font-size:1.2rem;color:#999;margin-left:1rem}
     .clear_btn img{width:1.5rem;height:1.2rem;}
@@ -995,6 +1026,9 @@ ul.tabs li:first-child.current{
     .content_table .table_wrap table td:nth-child(2) img{width:4rem;height:4rem;border-radius:10px;}
     .content_table .table_wrap table td:last-child img{width:3.2rem;height:3.2rem;}
     .content_table .table_wrap table td:nth-child(4),.table_wrap table td:nth-child(5),.table_wrap table td:nth-child(6){text-align:left;padding:0 2rem}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-140px;width:15rem}
+    .table_scroll_wrap_m{height:14rem;padding-bottom:2rem}
+    .table_scroll_wrap{overflow-y:scroll;height:19rem;padding-bottom:2rem}
 }
 @media all and (min-width:569px) and (max-width:640px) {
     .form-control{font-size:1.2rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:13rem}
@@ -1099,14 +1133,14 @@ ul.tabs li:first-child.current{
     .hero_stat_list_wrap{height:36rem;}
     .table_wrap table td:first-child img{width:3.1rem;height:3.1rem;border-radius:10px;}
     .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.2rem;padding:1rem 2rem}
-    .table_wrap{width:100%;padding:2rem;overflow-y:scroll;height:15rem}
+    .table_wrap{width:100%;padding:2rem 2rem 0 2rem;overflow-y:scroll;}
     .table_wrap table{width:100%;font-size:1.2rem;}
     .table_wrap table td{color:#333;border-top:1px solid #a2abab;border-bottom:1px solid #a2abab;text-align:center;padding:1rem 0;}
     .table_wrap table td:last-child{background: none;}
     .table_wrap table td:first-child{border-left:1px solid #a2abab}
     .table_wrap table td:last-child{border-right:1px solid #a2abab}
     .table_wrap table td:nth-child(2){text-align:left;}
-    .table_wrap table td:nth-child(2) img{width:4.5rem;height:4.5rem;border-radius:10px;}
+    #tab-1 .table_wrap table td:nth-child(2) img{width:4.5rem;height:4.5rem;border-radius:10px;margin-right:1rem}
     .table_wrap table td:last-child img{width:11.1rem;height:3.2rem;}
     .clear_btn{display:block;margin-top:1rem;font-size:1.2rem;color:#999;margin-left:1rem}
     .clear_btn img{width:1.5rem;height:1.2rem;}
@@ -1160,6 +1194,9 @@ ul.tabs li:first-child.current{
     .content_table .table_wrap table td:nth-child(2) img{width:4rem;height:4rem;border-radius:10px;}
     .content_table .table_wrap table td:last-child img{width:3.2rem;height:3.2rem;}
     .content_table .table_wrap table td:nth-child(4),.table_wrap table td:nth-child(5),.table_wrap table td:nth-child(6){text-align:left;padding:0 2rem}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-145px;width:15rem}
+    .table_scroll_wrap_m{height:12.5rem;padding-bottom:2rem}
+    .table_scroll_wrap{overflow-y:scroll;height:18rem;padding-bottom:2rem}
 }
 @media all and (max-width:568px) {
     .form-control{font-size:1.2rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:13rem}
@@ -1258,11 +1295,11 @@ ul.tabs li:first-child.current{
     .party_select_wrap div:last-child ul{float:right}
     .party_select_wrap div:last-child li{float:left;display:inline-block;margin-right:1.5rem;}
     .party_select_wrap div:last-child li:last-child{margin-right:0;}
-    .party_select_wrap div:last-child li img{width:6.1rem;height:6rem;border-radius:10px;}
+    .party_select_wrap div:last-child li img{width:5.1rem;height:5rem;border-radius:10px;}
     .party_select_wrap div:last-child p{float:right;font-size:1.2rem;color:#999;clear: both;margin-top:0rem}
     .party_select_wrap div:last-child p img{width:1.5rem;height:1.3rem;}
     .hero_stat_list_wrap{height:32rem;}
-    .table_wrap{width:100%;padding:0 2rem 2rem 2rem;overflow-y:scroll;height:8rem}
+    .table_wrap{width:100%;padding:2rem 2rem 0 2rem;overflow-y:scroll;}
     .table_wrap table td:first-child img{width:3.1rem;height:3.1rem;border-radius:10px;}
     .table_wrap table td:last-child button{border:none;text-align:center;background:#28b3b5;color:white;font-size:1.2rem;padding:1rem 2rem}
     .table_wrap table{width:100%;font-size:1.2rem;}
@@ -1271,7 +1308,7 @@ ul.tabs li:first-child.current{
     .table_wrap table td:first-child{border-left:1px solid #a2abab}
     .table_wrap table td:last-child{border-right:1px solid #a2abab}
     .table_wrap table td:nth-child(2){text-align:left;}
-    .table_wrap table td:nth-child(2) img{width:4rem;height:4rem;border-radius:10px;}
+    #tab-1 .table_wrap table td:nth-child(2) img{width:4rem;height:4rem;border-radius:10px;margin-right:1rem}
     .table_wrap table td:last-child img{width:11.1rem;height:3.2rem;}
     .clear_btn{display:block;margin-top:1rem;font-size:1.2rem;color:#999;margin-left:1rem}
     .clear_btn img{width:1.5rem;height:1.2rem;}
@@ -1308,8 +1345,6 @@ ul.tabs li:first-child.current{
     .progress_wrap{width:25rem;padding:0 1rem 0 2rem;position: relative;}
     .flag{width:2.5rem;height:2.5rem;background:#1fb7ba;border-radius:50%;display:inline-block;float:left;border: 2px solid white;
         box-shadow: 0 0 0 1pt #1fb7ba;position: absolute;z-index:2;left:1.5rem}
-    .line_wrap{width:90%;float:left;margin-top:7px;margin-left:-3px;border: 2px solid white;border-radius:10px;
-        box-shadow: 0 0 0 1pt #1fb7ba;position: absolute;z-index:1}
     .line_wrap span{background:#1fb7ba;height:0.7rem;display:inline-block;float:left;border-radius:10px;}
     .sum{float:right;margin-right:15px}
     .modal_party_hero li img.bn{border:none}
@@ -1325,4 +1360,7 @@ ul.tabs li:first-child.current{
     .content_table .table_wrap table td:nth-child(2) img{width:4rem;height:4rem;border-radius:10px;}
     .content_table .table_wrap table td:last-child img{width:3.2rem;height:3.2rem;}
     .content_table .table_wrap table td:nth-child(4),.table_wrap table td:nth-child(5),.table_wrap table td:nth-child(6){text-align:left;padding:0 2rem}
+    .tool{position: absolute;top:7px;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;left:-145px;width:15rem}
+    .table_scroll_wrap_m{height:10rem;padding-bottom:2rem}
+    .table_scroll_wrap{overflow-y:scroll;height:17rem;padding-bottom:2rem}
 }

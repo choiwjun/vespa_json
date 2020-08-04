@@ -35,7 +35,7 @@ $(document).ready(function(){
         $('.content_stat_list_wrap div:first-child .bage_img1').attr('src','images/img_content_stat_bage.png')
         $('.content_stat_list_wrap div:nth-child(2) ul').show();
         $('.content_stat_list_wrap div:nth-child(2) p').hide();
-        var msg = '결투장을 먼저 선택해주세요.'
+        var msg = '전투장을 먼저 선택해주세요.'
         $('.content_stat_list_wrap div:last-child p').html(msg).show();
 
     });
