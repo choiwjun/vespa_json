@@ -4,7 +4,7 @@ html.body{height:100%}
 #tab-1 table td:nth-child(4){position: relative;}
 .tool p{margin:0;letter-spacing:-1px;}
 .modal-title{font-weight:700 !important;}
-.modal-content{width:33rem !important}
+.modal-content{width:32.5rem !important}
 .select_wrap{float:left;}
 .table_wrap{margin-top:0 !important;padding-top:1rem !important}
 .table_wrap table th{padding-bottom:1rem !important}
