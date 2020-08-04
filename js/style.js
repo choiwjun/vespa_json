@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.hero_stat_list_head img').click(function(){
-        window.history.back();
+        window.location.href = 'index.html';
     })
     $('#here_ajax_list_ul li').click(function(e){
         if($(this).hasClass('on')){
