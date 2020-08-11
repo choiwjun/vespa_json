@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <script src="js/jquery-3.2.1.min.js"></script>
-    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <script src="js/bootstrap.min.js"></script>
@@ -22,7 +22,7 @@
         $(document).ready(function(){
             $('.hero_stat_item_list_head img').click(function(){
                 window.location.href = 'content_stat_party_list.html';
-            })
+            });
 
             var timer;
             $('.tool_img').on("vmousedown touchstart mousedown",function(){
@@ -34,6 +34,17 @@
                 var class_chk = $(this);
                 clearTimeout(timer);
                 $(class_chk).parent().children('.tool').hide()
+            });
+            var timer_sub;
+            $('.modal-body li').on("vmousedown touchstart mousedown",function(){
+                var class_chk_sub = $(this);
+                timer = setTimeout(function(){
+                    $(class_chk_sub).children('.modal_tool').show()
+                },300);
+            }).on("vmouseup touchend mouseup mouseleave",function(){
+                var class_chk_sub = $(this);
+                clearTimeout(timer);
+                $(class_chk_sub).children('.modal_tool').hide()
             });
         })
     </script>
@@ -47,30 +58,7 @@
         <div class="hero_stat_item_list_content">
             <div id="tab-1" class="tab-content current">
                 <div class="table_wrap">
-                    <table>
-                        <colgroup>
-                            <col width="5%" />
-                            <col width="10%" />
-                            <col width="15%" />
-                            <col width="16.5%" />
-                            <col width="16.5%" />
-                            <col width="16.5%" />
-                            <col width="5%" />
-                            <col width="10%" />
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>순위</th>
-                                <th>영웅</th>
-                                <th>세트</th>
-                                <th>옵션1</th>
-                                <th>옵션2</th>
-                                <th>옵션3</th>
-                                <th>보물</th>
-                                <th>초월</th>
-                            </tr>
-                        </thead>
-                    </table>
+
                     <div class="table_scroll_wrap">
                         <table>
                             <colgroup>
@@ -80,26 +68,22 @@
                                 <col width="16.5%" />
                                 <col width="16.5%" />
                                 <col width="16.5%" />
-                                <col width="5%" />
                                 <col width="10%" />
+                                <col width="" />
                             </colgroup>
-                            <tbody>
+                            <thead>
                                 <tr>
-                                    <td>2</td>
-                                    <td><img src="images/img_hero_stat_1.png" /></td>
-                                    <td>회심의화염</td>
-                                    <td>공격시 마나회복량<br />9,999,999</td>
-                                    <td>초당 마나회복량<br />9,999,999</td>
-                                    <td>모든 블록 확률<br />9,999,999</td>
-                                    <td><img src="images/ico_hero_treasure.png" class="tool_img" />
-                                        <div class="tool">
-                                            <p>
-                                                알수없는 그림이 담긴 액자
-                                            </p>
-                                        </div>
-                                    </td>
-                                    <td><button data-toggle="modal" data-target="#myModal">보기</button></td>
+                                    <th>NO</th>
+                                    <th>영웅</th>
+                                    <th>세트</th>
+                                    <th>옵션1</th>
+                                    <th>옵션2</th>
+                                    <th>옵션3</th>
+                                    <th>보물</th>
+                                    <th>초월</th>
                                 </tr>
+                            </thead>
+                            <tbody>
                                 <tr>
                                     <td>1</td>
                                     <td><img src="images/img_hero_stat_1.png" /></td>
@@ -121,6 +105,7 @@
                     </div>
                 </div>
                 <!-- Modal -->
+                <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                     <div class="modal-content">
@@ -135,12 +120,48 @@
                                 <h2>1</h2>
                                 <div>
                                     <ul>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -148,12 +169,48 @@
                                 <h2>2</h2>
                                 <div>
                                     <ul>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -161,18 +218,92 @@
                                 <h2>3</h2>
                                 <div>
                                     <ul>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on"/></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -180,12 +311,48 @@
                                 <h2>5</h2>
                                 <div>
                                     <ul>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
-                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on" /></li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="gray modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><img src="images/img_hero_pop_item.png" alt="item" class="on modal_tool_img" />
+                                            <div class="modal_tool">
+                                                <p>
+                                                    잊혀진 심판자의 깃털
+                                                </p>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

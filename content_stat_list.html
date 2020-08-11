@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <script src="js/jquery-3.2.1.min.js"></script>
-    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <script src="js/bootstrap.min.js"></script>
@@ -18,6 +18,29 @@
     <![endif]-->
   </head>
   <body>
+    <script>
+        $(document).ready(function(){
+            $(window).resize(resizeContents);
+                resizeContents();
+            });
+            function resizeContents() {
+                $(".content_stat_list_wrap > div").height($(window).height()-160); 
+                $(".content_stat_list_wrap > div").height($(window).height()-160);
+            }
+            function throttle(ms, fn) {
+                var allow = true;
+                function enable() {
+                    allow = true;
+                }
+                return function(e) {
+                    if(allow) {
+                    allow = false;
+                        setTimeout(enable, ms);
+                        fn.call(this, e);
+                    }
+                }
+            }
+    </script>
     <div class="hero_stat_list_wrap">
         <div class="hero_stat_list_head">
             <h1>
@@ -33,9 +56,18 @@
                 </div>
                 <h2> 콘텐츠 선택</h2>
                 <ul>
-                    <li><img src="images/img_content_stat_list1.png" alt=" 콘텐츠 이미지" /></li>
-                    <li><img src="images/img_content_stat_list2.png" alt=" 콘텐츠 이미지" /></li>
-                    <li><img src="images/img_content_stat_list1.png" alt=" 콘텐츠 이미지" /></li>
+                    <li>
+                        <p>근성의 냉기</p>
+                        <img src="images/img_content_stat_list1.png" alt=" 콘텐츠 이미지" />
+                    </li>
+                    <li>
+                        <p>회심의 화염</p>
+                        <img src="images/img_content_stat_list2.png" alt=" 콘텐츠 이미지" />
+                    </li>
+                    <li>
+                        <p>근성의 냉기</p>
+                        <img src="images/img_content_stat_list1.png" alt=" 콘텐츠 이미지" />
+                    </li>
                 </ul>
             </div>
             <div>

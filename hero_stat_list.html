@@ -7,7 +7,7 @@
     <title></title>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.ajax-cross-origin.min.js"></script>
-    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <script src="js/bootstrap.min.js"></script>
@@ -19,6 +19,29 @@
     <![endif]-->
   </head>
   <body>
+    <script>
+        $(document).ready(function(){
+            $(window).resize(resizeContents);
+                resizeContents();
+            });
+            function resizeContents() {
+                $(".hero_stat_list_menu div:last-child").height($(window).height()-261);
+                $(".hero_stat_list_img_wrap").height($(window).height()-140);
+            }
+            function throttle(ms, fn) {
+                var allow = true;
+                function enable() {
+                    allow = true;
+                }
+                return function(e) {
+                    if(allow) {
+                    allow = false;
+                        setTimeout(enable, ms);
+                        fn.call(this, e);
+                    }
+                }
+            }
+    </script>
   <div name="test"></div>
     <div class="hero_stat_list_wrap">
         <div class="hero_stat_list_head">
@@ -28,64 +51,66 @@
                 <span>왼쪽조건으로 검색하실 수 있습니다.</span>
             </h1>
         </div>
-        <div class="hero_stat_list_menu">
-            <div>
-                <ul>
-                    <li>
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>&nbsp;<label for="inlineRadio1"><span></span>전체 영웅</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">&nbsp;<label for="inlineRadio2"><span></span>소유한 영웅</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">&nbsp;<label for="inlineRadio3"><span></span>미보유 영웅</label>
-                    </li>
-                </ul>
+        <div class="sc">
+            <div class="hero_stat_list_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>&nbsp;<label for="inlineRadio1"><span></span>전체 영웅</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">&nbsp;<label for="inlineRadio2"><span></span>소유한 영웅</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">&nbsp;<label for="inlineRadio3"><span></span>미보유 영웅</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" name="inlineRadioOptions1" id="inlineRadio4" value="option4" checked>&nbsp;<label for="inlineRadio4"><span></span>전체 영웅</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="inlineRadioOptions1" id="inlineRadio5" value="option5">&nbsp;<label for="inlineRadio5"><span></span>기사</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="inlineRadioOptions1" id="inlineRadio6" value="option6">&nbsp;<label for="inlineRadio6"><span></span>전사</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="inlineRadioOptions1" id="inlineRadio7" value="option7">&nbsp;<label for="inlineRadio7"><span></span>암살자</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="inlineRadioOptions1" id="inlineRadio8" value="option8">&nbsp;<label for="inlineRadio8"><span></span>궁수</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="inlineRadioOptions1" id="inlineRadio9" value="option9">&nbsp;<label for="inlineRadio9"><span></span>기계공</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="inlineRadioOptions1" id="inlineRadio10" value="option10">&nbsp;<label for="inlineRadio10"><span></span>마법사</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="inlineRadioOptions1" id="inlineRadio11" value="option11">&nbsp;<label for="inlineRadio11"><span></span>사제</label>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio4" value="option4" checked>&nbsp;<label for="inlineRadio4"><span></span>전체 영웅</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio5" value="option5">&nbsp;<label for="inlineRadio5"><span></span>기사</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio6" value="option6">&nbsp;<label for="inlineRadio6"><span></span>전사</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio7" value="option7">&nbsp;<label for="inlineRadio7"><span></span>암살자</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio8" value="option8">&nbsp;<label for="inlineRadio8"><span></span>궁수</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio9" value="option9">&nbsp;<label for="inlineRadio9"><span></span>기계공</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio10" value="option10">&nbsp;<label for="inlineRadio10"><span></span>마법사</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio11" value="option11">&nbsp;<label for="inlineRadio11"><span></span>사제</label>
-                    </li>
-                </ul>
+            <div class="hero_stat_list_img_wrap">
+                <div class="row">
+                    <ul id="here_ajax_list_ul">
+                        <!--
+                        <li>
+                            <span>글렌위스</span>
+                            <img src="images/img_hero_stat_1.png" alt="hero_img" />
+                        </li>
+                        -->
+                    </ul>
+                </div>
+                
             </div>
-        </div>
-        <div class="hero_stat_list_img_wrap">
-            <div class="row">
-                <ul id="here_ajax_list_ul">
-                    <!--
-                    <li>
-                        <span>글렌위스</span>
-                        <img src="images/img_hero_stat_1.png" alt="hero_img" />
-                    </li>
-                    -->
-                </ul>
+            <div class="hero_select_btn">
+                <button>선택완료</button>
             </div>
-            
-        </div>
-        <div class="hero_select_btn">
-            <button>선택완료</button>
         </div>
     </div>
   <script>
@@ -107,6 +132,7 @@
                                       $("#here_ajax_list_ul").append(
                                           '                    <li>\n' +
                                           '                        <span>' + leng_kor.CREATURE_NAME[responseObject.TAG_TYPE[i][z]] + '</span>\n' +
+                                          '                        <div class="bg"></div>\n' +
                                           '                        <img src="https://s3.ap-northeast-2.amazonaws.com/game-stats.kingsraid.com/live/kr-stats/v1/static/hero-icons/'+responseObject.TAG_TYPE[i][z]+'.png" alt="hero_img" />\n' +
                                           '                    </li>'
                                       );

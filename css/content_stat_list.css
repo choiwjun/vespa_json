@@ -1,5 +1,5 @@
 body{font-size:62.5%}
-html.body{height:100%}
+html,body{height:100%;}
 li{list-style:none;}
 input[type="radio"] {
     display:none;
@@ -17,7 +17,6 @@ label{font-weight:400;display:block;margin-bottom:0}
 }
 .content_stat_list_wrap > div h2{font-size:2rem !important}
 .bage{width:32%;text-align:center;}
-@media all and (min-width:1025px) {
     input[type="radio"] + label span {
         display:inline-block;
         width:16px;
@@ -47,12 +46,12 @@ label{font-weight:400;display:block;margin-bottom:0}
     .row{margin:0}
     .hero_stat_list_wrap{
         background-image:url('../images/bg_hero_stat_list.png'); 
-        height: 102.4rem;
         width:100%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding:1.5rem 2rem
+        padding:1rem;
+        height:100%;
     }
     .hero_stat_list_head{margin-bottom:4rem;position:relative;}
     .hero_stat_list_head h1{
@@ -62,444 +61,26 @@ label{font-weight:400;display:block;margin-bottom:0}
     }
     .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
     .hero_stat_list_head h1 span{font-size:1.7rem;}
-    .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:7rem;}
+    .content_stat_list_wrap{width:100%;}
+    .bage{position: absolute;top:6.5rem;z-index:2}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
-    .content_stat_list_wrap > div{width:32%;float:left;background:white;height:100%;border-radius:10px;height:87rem;margin-right:1.5rem;}
-    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
-    .content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
-    .content_stat_list_wrap > div:last-child{margin-right:0}
-    .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
-    .content_stat_list_wrap > div ul{text-align:center;overflow-y: scroll;height:80rem;}
-    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:35rem;height:11.25rem;border-radius:10px;border:3px solid #7a8ca1}
-    .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
-    .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
-    button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-    button{clear:both;background:#335175;color:#6f88a6;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-}
-@media all and (max-width:1024px) {
-    input[type="radio"] + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_off.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    input[type="radio"]:checked + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_on.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    .row{margin:0}
-    .hero_stat_list_wrap{
-        background-image:url('../images/bg_hero_stat_list.png'); 
-        height: 76.8rem;
-        width:100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding:1.5rem 2rem
-    }
-    .hero_stat_list_head{margin-bottom:4rem;position:relative;}
-    .hero_stat_list_head h1{
-        color:white;
-        font-size:2.5rem;
-        margin:0 !important;
-    }
-    .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
-    .hero_stat_list_head h1 span{font-size:1.7rem;}
-    .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:7rem;width:32%;text-align:center;}
-    .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
-    .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:60rem;margin-right:1.5rem;}
+    .content_stat_list_wrap > div{float:left;background:white;border-radius:10px;width:32.6%;margin-right:1%;overflow-y:scroll;}
+    .content_stat_list_wrap > div:last-child{margin-right:0;}
     .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
     .content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
     .content_stat_list_wrap > div:last-child{margin-right:0}
     .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
     .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:27.4rem;height:9.25rem;border-radius:10px;border:3px solid #7a8ca1}
-    .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
+    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;width:90%;position: relative;z-index:1}
+    .content_stat_list_wrap > div:first-child li p{position: absolute;bottom:0;color:white;text-align:center;font-weight:500;font-size:1.6rem;width:100%;text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .content_stat_list_wrap > div:first-child li img{width:100%;border-radius:10px;border:3px solid #7a8ca1}
+    .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:90%;text-align:left;padding:0 2rem 1.5rem 2rem;
+        margin:0 auto;font-size:1.4rem;margin-bottom:1rem;}
     .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
     button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
     button{clear:both;background:#335175;color:#6f88a6;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-}
-@media all and (min-width:768px) and (max-width:1023px) {
-    input[type="radio"] + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_off.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
+    @media all and (max-width:650px) {
+        .content_stat_list_wrap > div:first-child li p{font-size:1.2rem}
     }
-
-    input[type="radio"]:checked + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_on.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    .row{margin:0}
-    .hero_stat_list_wrap{
-        background-image:url('../images/bg_hero_stat_list.png'); 
-        height: 37.5rem;
-        width:100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding:1.5rem 2rem
-    }
-    .hero_stat_list_head{margin-bottom:3rem;position:relative;}
-    .hero_stat_list_head h1{
-        color:white;
-        font-size:2.5rem;
-        margin:0 !important;
-    }
-    .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
-    .hero_stat_list_head h1 span{font-size:1.7rem;}
-    .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:6rem;}
-    .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
-    .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:22rem;margin-right:1.5rem;}
-    .content_stat_list_wrap > div:last-child{margin-right:0}
-    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
-    .content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
-    .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
-    .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:22rem;height:8.25rem;border-radius:10px;border:3px solid #7a8ca1}
-    .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
-    .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
-    button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-    button{clear:both;background:#335175;color:#6f88a6;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-}
-@media all and (min-width:737px) and (max-width:767px) {
-    input[type="radio"] + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_off.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    input[type="radio"]:checked + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_on.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    .row{margin:0}
-    .hero_stat_list_wrap{
-        background-image:url('../images/bg_hero_stat_list.png'); 
-        height: 42.5rem;
-        width:100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding:1.5rem 2rem
-    }
-    .hero_stat_list_head{margin-bottom:3rem;position:relative;}
-    .hero_stat_list_head h1{
-        color:white;
-        font-size:2.5rem;
-        margin:0 !important;
-    }
-    .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
-    .hero_stat_list_head h1 span{font-size:1.7rem;}
-    .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:6rem;}
-    .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
-    .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:22rem;margin-right:1.5rem;}
-    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
-    .content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
-    .content_stat_list_wrap > div:last-child{margin-right:0}
-    .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
-    .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:22rem;height:8.25rem;border-radius:10px;border:3px solid #7a8ca1}
-    .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
-    .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
-    button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-    button{clear:both;background:#335175;color:#6f88a6;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-}
-@media all and (min-width:668px) and (max-width:736px) {
-    input[type="radio"] + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_off.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    input[type="radio"]:checked + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_on.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    .row{margin:0}
-    .hero_stat_list_wrap{
-        background-image:url('../images/bg_hero_stat_list.png'); 
-        height: 41.4rem;
-        width:100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding:1.5rem 2rem
-    }
-    .hero_stat_list_head{margin-bottom:3rem;position:relative;}
-    .hero_stat_list_head h1{
-        color:white;
-        font-size:2.5rem;
-        margin:0 !important;
-    }
-    .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
-    .hero_stat_list_head h1 span{font-size:1.7rem;}
-    .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:6rem;}
-    .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
-    .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:25rem;margin-right:1rem;}
-    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
-    .content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
-    .content_stat_list_wrap > div:last-child{margin-right:0}
-    .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
-    .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:20rem;height:7.5rem;border-radius:10px;border:3px solid #7a8ca1}
-    .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
-    .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
-    button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-    button{clear:both;background:#335175;color:#6f88a6;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-}
-@media all and (min-width:641px) and (max-width:667px) {
-    input[type="radio"] + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_off.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    input[type="radio"]:checked + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_on.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    .row{margin:0}
-    .hero_stat_list_wrap{
-        background-image:url('../images/bg_hero_stat_list.png'); 
-        height: 37.5rem;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding:1.5rem 2rem
-    }
-    .hero_stat_list_head{margin-bottom:3rem;position:relative;}
-    .hero_stat_list_head h1{
-        color:white;
-        font-size:2.5rem;
-        margin:0 !important;
-    }
-    .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
-    .hero_stat_list_head h1 span{font-size:1.7rem;}
-    .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:6rem;}
-    .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
-    .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:23rem;margin-right:1rem;}
-    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
-.content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
-    .content_stat_list_wrap > div:last-child{margin-right:0}
-    .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
-    .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:18rem;height:6.5rem;border-radius:10px;border:3px solid #7a8ca1}
-    .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li
-    {border:1px solid #d0d8d8;width:80%;text-align:left;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
-    .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
-    button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-    button{clear:both;background:#335175;color:#6f88a6;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-}
-@media all and (min-width:569px) and (max-width:640px) {
-    input[type="radio"] + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_off.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    input[type="radio"]:checked + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_on.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    .row{margin:0}
-    .hero_stat_list_wrap{
-        background-image:url('../images/bg_hero_stat_list.png'); 
-        height: 36rem;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding:1.5rem 2rem
-    }
-    .hero_stat_list_head{margin-bottom:3rem;position:relative;}
-    .hero_stat_list_head h1{
-        color:white;
-        font-size:2.5rem;
-        margin:0 !important;
-    }
-    .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
-    .hero_stat_list_head h1 span{font-size:1.7rem;}
-    .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:6rem;}
-    .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
-    .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:22rem;margin-right:1rem;}
-    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
-.content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
-    .content_stat_list_wrap > div:last-child{margin-right:0}
-    .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
-    .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{width:18rem;margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:18rem;height:6.5rem;border-radius:10px;border:3px solid #7a8ca1}
-    .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
-    .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
-    button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-    button{clear:both;background:#335175;color:#6f88a6;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-}
-@media all and (max-width:568px) {
-    input[type="radio"] + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_off.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    input[type="radio"]:checked + label span {
-        display:inline-block;
-        width:16px;
-        height:16px;
-        vertical-align:middle;
-        background-image:url('../images/bg_radio_on.png') ;
-        background-repeat:no-repeat;
-        background-position:left 0 ;
-        background-size: cover;
-        cursor:pointer;
-        margin-right:1rem
-    }
-
-    .row{margin:0}
-    .hero_stat_list_wrap{
-        background-image:url('../images/bg_hero_stat_list.png'); 
-        height: 32rem;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding:1.5rem 2rem
-    }
-    .hero_stat_list_head{margin-bottom:2rem;position:relative;}
-    .hero_stat_list_head h1{
-        color:white;
-        font-size:2rem;
-        margin:0 !important;
-    }
-    .hero_stat_list_head h1 img{width:2.5rem;height:2.5rem;margin-right:1rem;margin-top:-3px}
-    .hero_stat_list_head h1 span{font-size:1.5rem;}
-    .content_stat_list_wrap{overflow: hidden;}
-    .bage{position: absolute;top:5rem;}
-    .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
-    .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:18rem;margin-right:1rem;}
-    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
-.content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
-    .content_stat_list_wrap > div:last-child{margin-right:0}
-    .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
-    .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:16rem;height:5.5rem;border-radius:10px;border:3px solid #7a8ca1}
-    .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:90%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
-    .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
-    button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-    button{clear:both;background:#335175;color:#6f88a6;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
-}
