@@ -88,6 +88,7 @@ html.body{height:100%}
     #tab-2 .table_wrap table td:nth-child(3){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-3 .table_wrap table td:nth-child(2){text-align:left !important;padding-left:2rem;padding-right:2rem}
     #tab-2 .table_wrap table td:nth-child(2){overflow: hidden;}
+    #tab-2 .table_wrap table td:nth-child(2) div{width:225px;position:relative;z-index:1}
     #tab-2 .table_wrap table td:nth-child(2) img{width:3.5rem;height:3.5rem;position: absolute;left:0;margin-top:-5px;
         z-index:1;border-radius:5px;border:2px solid #7a8ca1;float:left;display:inline-block;}
     #tab-2 .table_wrap table td:nth-child(2) img:nth-child(2){left:3%;z-index:2}
@@ -113,7 +114,7 @@ html.body{height:100%}
     .modal-body li:last-child{margin-right:0}
     .modal-body li img{width:3.6rem;height:3.6rem;vertical-align:top;border-radius:10px;border:2px solid #7a8ca1;}
     .modal-body li .on{border:2px solid #28b3b5}
-    .modal-footer{text-align:center;po}
+    .modal-footer{text-align:center;}
     .modal-footer button{text-align:center;background:#28b3b5;color:white;border:none;width:10rem;height:3.1rem;font-size:1.4rem;}
     .progress_wrap{width:70%;padding:0 1rem 0 2rem;position: relative;z-index:1}
     .flag{width:2.5rem;height:2.5rem;background:#1fb7ba;border-radius:50%;display:inline-block;float:left;border: 2px solid white;

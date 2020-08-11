@@ -9,7 +9,7 @@ label{font-weight:400;}
 .hero_stat_list_img_wrap,.hero_stat_list_menu > div:last-child{
     -ms-overflow-style: none; /* IE and Edge */
 }
-.hero_stat_list_img_wrap::-webkit-scrollbar,.hero_stat_list_menu > div:last-child::-webkit-scrollbar {
+.hero_stat_list_img_wrap::-webkit-scrollbar,.hero_stat_list_menu > div:last-child::-webkit-scrollbar,.hero_stat_list_menu::-webkit-scrollbar{
     display: none; /* Chrome, Safari, Opera*/
 }
 

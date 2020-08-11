@@ -119,9 +119,10 @@ td{letter-spacing:-1px;}
     .party_select_wrap div:first-child{float:left}
     .party_select_wrap div:first-child p{font-size:1.4rem;letter-spacing:-1px;}
     .party_select_wrap div:last-child{float:right}
-    .party_select_wrap div:last-child li{float:left;display:inline-block;margin-right:1rem;}
+    .party_select_wrap div:last-child li{float:left;display:inline-block;margin-right:1rem;text-align:center;}
+    .party_select_wrap div:last-child li span{position:absolute;z-index:2;color:#26bdbf;font-size:14px;width:5.5rem;margin-top:2rem;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
     .party_select_wrap div:last-child li:last-child{margin-right:0}
-    .party_select_wrap div:last-child li img{width:6.1rem;height:6rem;border-radius:10px;}
+    .party_select_wrap div:last-child li img{width:6.1rem;height:6rem;border-radius:10px;position: relative;z-index:1 ;}
     .party_select_wrap div:last-child p{float:right;margin-top:1.5rem;font-size:1.4rem;color:#999;margin-left:1rem}
     .party_select_wrap div:last-child p img{width:1.5rem;height:1.3rem;}
 

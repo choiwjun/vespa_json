@@ -18,26 +18,15 @@ html,body{height:100%;overflow:hidden;}
     position: fixed;
     top:27%;
     left:13%;
-    background-image:url('../images/btn_hero_stat_n.png'); 
     width:22%;
     height:47%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    text-align: center;
-    display: inline-block
 }
-.btn_move_hero_stat img{width:30%;position: absolute;top:0; left:0; bottom:0; right:0;margin:40% auto;}
+.btn_move_hero_stat img{width:100%;position: absolute;top:0; left:0; bottom:0; right:0;margin:0% auto;}
 .btn_move_content_stat{
     position: fixed;
     top:27%;
     right:10%;
-    background-image:url('../images/btn_content_stat_n.png'); 
     width:22%;
     height:47%;
-    background-size: contain;
-    background-position:right 0;
-    background-repeat: no-repeat;
-    text-align: center;
 }
-.btn_move_content_stat img{width:39%;position: absolute;top:0; left:0; bottom:0; right:0;margin:40% auto;}
+.btn_move_content_stat img{width:100%;position: absolute;top:0; left:0; bottom:0; right:0;margin:0% auto;}
